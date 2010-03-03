@@ -6,9 +6,6 @@ require 'rdiscount'
 module Piccolo
 
   class Server
-
-    HamlOptions = { :format => :html5 }
-
     def call(env)
       request = Rack::Request.new env
 
@@ -16,7 +13,7 @@ module Piccolo
         raise HttpError.new(405, 'Method not allowed') unless request.get? or request.head?
         status, content = 200, dispatch(request)
       rescue HttpError
-        status, content = [$!.code, $!.message.to_s + "\n"]
+        status, content = $!.code, HamlView.new(:error, :error => $!).to_html
       end
 
       headers = {
@@ -31,48 +28,60 @@ module Piccolo
 
     def dispatch(request)
       if request.path == '/'
-        posts = Dir['posts/*.txt'].map do |file|
-          Post.new(file)
-        end
-        render_page :home, nil, :title => 'Home', :posts => posts
+        HamlView.new(:home, :posts => PostCollection.new).to_html
       elsif /^\/(\d{4})\/(\d{2})\/([\w-]+)/.match(request.path)
-        post = Post.new("posts/#{$1}-#{$2}-#{$3}.txt")
-        render_page :post, post.content, post.data.merge({:post => post})
+        post = PostCollection.new.post($1, $2, $3)
+        data = post.meta.merge(:post => post, :content => post.content)
+        HamlView.new(:post, data).to_html
       else
-        raise HttpError.new(404, 'page not found')
+        raise HttpError.new(404, 'Path Not Found')
       end
     end
+  end
 
-    def render_page(type, content = nil, data = {})
-      render_haml(:base, data, render_haml(type, data, content))
+  class HamlView
+    OPTIONS = { :dir => 'templates', :format => :html5 }
+    def initialize(template, data = {})
+      @template, @data = template, data
     end
-
-    def render_haml(name, data, content)
-      Haml::Engine.new(
-        File.read("templates/#{name}.haml"),
-        HamlOptions
-      ).render(
+    def to_html
+      render_haml(:base, @data, render_haml(@template, @data))
+    end
+    def render_haml(name, data, content = nil)
+      path = "#{OPTIONS[:dir]}/#{name}.haml"
+      Haml::Engine.new(File.read(path), OPTIONS).render(
         nil,
-        data.merge({:content => content})
+        data.merge(:content => content)
       )
     end
   end
 
   class Post
-    attr_reader :data, :content, :title, :date
+    attr_reader :meta, :content, :title, :date, :url
     def initialize(path)
       begin
         yaml, markdown = File.read(path).split(/\n\n/, 2)
-        @path = path
-        @data, @content = YAML::load(yaml), RDiscount.new(markdown).to_html
-        @title, @date = @data.values_at('title', 'date')
       rescue Errno::ENOENT
-        raise HttpError.new(404, "Not Found: #{path}")
+        raise HttpError.new(404, 'Post Not Found')
       end
+      @path = path
+      @meta, @content = YAML::load(yaml), RDiscount.new(markdown).to_html
+      @title, @date = @meta.values_at('title', 'date')
     end
     def url
-      @path =~ /^posts\/(\d{4})-(\d{2})-([\w-]+).txt$/
+      @path =~ /\/(\d{4})-(\d{2})-([\w-]+).txt$/
       "/#{$1}/#{$2}/#{$3}"
+    end
+  end
+
+  class PostCollection
+    include Enumerable
+    DIR = 'posts'
+    def each
+      Dir.glob("#{DIR}/*.txt").each { |path| yield Post.new(path) }
+    end
+    def post(year, month, stub)
+      Post.new('%s/%04d-%02d-%s.txt' % [DIR, year, month, stub])
     end
   end
 
