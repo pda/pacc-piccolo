@@ -1,0 +1,50 @@
+title: Conflict free DNS and routes with multiple DHCP interfaces
+date: 27 October 2009
+
+<h2>The Problem</h2>
+
+<p>Running DHCP on two or more network interfaces inevitably leads to
+conflicting or unpredictable DNS and default route settings.</p>
+
+<p>For development at home and work, I use an Ubuntu virtual machine running
+on Mac OS.  To ensure I have a predictable IP address regardless of what
+network I'm on, the VM primary network interface is <strong>NATed</strong>, so
+it gets an IP address from VMware's DHCP server.  To let my co-workers access
+HTTP on my virtual machine, I have a second network interface which is
+<strong>bridged</strong></p>
+
+<p>The biggest symptom of the problem is complete loss of connectivity when
+I switch between home and office, and the default route from the previous
+location is retained.</p>
+
+<h2>The Solution That Should Work</h2>
+
+<p><a href="http://linux.die.net/man/5/dhclient.conf">DHCP client configuration</a>
+lets you specify which details you want to request from the DHCP server.</p>
+
+<blockquote>
+<p>The <strong>request</strong> statement</p>
+
+<p><strong>request [ option ] [, ... option ];</strong></p>
+
+<p>The request statement causes the client to request that any server
+responding to the client send the client its values for the specified
+options. Only the option names should be specified in the request statement
+- not option parameters. By default, the DHCP server requests the subnet-mask,
+broadcast-address, time-offset, routers, domain-name, domain-name-servers,
+host-name, nis-domain, nis-servers, and ntp-servers options.</p>
+</blockquote>
+
+<p>So it should be possible to omit 'routers' and 'domain-name-servers' from
+the 'request' statement of the bridged interface, and all should be good.
+However, it seems that some DHCP servers (like in my Linksys router at home)
+send a 'router' anyway, and the DHCP client respects it despite not having
+requested it.</p>
+
+<h2>The Solution That Does Work</h2>
+
+<p>The solution that seems to work reliably is to write a simple
+dhclient-enter-hook to unset any unwanted details before they are
+processed.</p>
+
+<pre><code>&#x000A;# /etc/dhcp3/dhclient-enter-hooks.d/bridged-eth1&#x000A;&#x000A;if [ "$interface" = eth1 -a -n "$new_routers" ]; then&#x000A;        echo Discarding eth1 routers: $new_routers&#x000A;        unset new_routers&#x000A;fi&#x000A;if [ "$interface" = eth1 -a -n "$new_domain_name_servers" ]; then&#x000A;        echo Discarding eth1 dns servers: $new_domain_name_servers&#x000A;        unset new_domain_name_servers&#x000A;fi&#x000A;</code></pre>

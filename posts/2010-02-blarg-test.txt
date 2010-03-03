@@ -1,0 +1,5 @@
+---
+title: Blarg Test
+date: 13th February 2010
+
+Here is the content.
