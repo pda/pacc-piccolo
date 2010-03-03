@@ -27,12 +27,20 @@ module Piccolo
     private
 
     def dispatch(request)
+      # index
       if request.path == '/'
         HamlView.new(:home, :posts => PostCollection.new).to_html
+
+      # page
+      elsif /^\/([\w-]+)$/.match(request.path)
+        HamlView.new(:page, :page => Page.new($1)).to_html
+
+      # post
       elsif /^\/(\d{4})\/(\d{2})\/([\w-]+)/.match(request.path)
         post = PostCollection.new.post($1, $2, $3)
         data = post.meta.merge(:post => post, :content => post.content)
         HamlView.new(:post, data).to_html
+
       else
         raise HttpError.new(404, 'Path Not Found')
       end
@@ -45,13 +53,33 @@ module Piccolo
       @template, @data = template, data
     end
     def to_html
-      render_haml(:base, @data, render_haml(@template, @data))
+      render_haml(path(:base), @data, render_haml(path(@template), @data))
     end
-    def render_haml(name, data, content = nil)
-      path = "#{OPTIONS[:dir]}/#{name}.haml"
+    def render_haml(path, data = {}, base_content = nil)
       Haml::Engine.new(File.read(path), OPTIONS).render(
         nil,
-        data.merge(:content => content)
+        data.merge(:base_content => base_content)
+      )
+    end
+    private
+    def path(name)
+      "#{OPTIONS[:dir]}/#{name}.haml"
+    end
+  end
+
+  class Page
+    DIR = 'pages'
+    def initialize(name)
+      begin
+        @name = name
+      rescue Errno::ENOENT
+        raise HttpError.new(404, 'Post Not Found')
+      end
+    end
+    def content
+      # TODO: don't abuse HamlView
+      HamlView.new(nil, nil).render_haml(
+        "#{DIR}/#{@name}.haml"
       )
     end
   end

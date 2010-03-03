@@ -40,10 +40,10 @@
 
       #column2.column
         .column-content
-          = content
+          = base_content
 
     #footer
-      %p &copy; 2007 &#8211; 2009 Paul Annesley
+      %p &copy; 2007 &#8211; #{Time.now.year} Paul Annesley
 
     %script{ :src => 'http://www.google-analytics.com/urchin.js', :type => 'text/javascript' }
     :javascript
