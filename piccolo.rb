@@ -84,28 +84,31 @@ module Piccolo
     end
   end
 
-  class Post
+  class Entry
     attr_reader :meta, :content, :title, :date, :url
     def initialize(path)
       begin
         yaml, markdown = File.read(path).split(/\n\n/, 2)
       rescue Errno::ENOENT
-        raise HttpError.new(404, 'Post Not Found')
+        raise HttpError.new(404, '%s Not Found' % self.type)
       end
       @path = path
       @meta = YAML::load yaml
       @content = RDiscount.new(markdown).to_html
       @title, @date = @meta['title'], Date.parse(@meta['date'])
     end
-    def url
-      @path =~ /\/(\d{4})-(\d{2})-([\w-]+).txt$/
-      "/#{$1}/#{$2}/#{$3}"
-    end
     def date_formatted
       @date.strftime('%d %B %Y').sub(/^0/, '')
     end
     def <=>(other)
        other.date <=> date
+    end
+  end
+
+  class Post < Entry
+    def url
+      @path =~ /\/(\d{4})-(\d{2})-([\w-]+).txt$/
+      "/#{$1}/#{$2}/#{$3}"
     end
   end
 
