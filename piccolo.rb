@@ -93,12 +93,19 @@ module Piccolo
         raise HttpError.new(404, 'Post Not Found')
       end
       @path = path
-      @meta, @content = YAML::load(yaml), RDiscount.new(markdown).to_html
-      @title, @date = @meta.values_at('title', 'date')
+      @meta = YAML::load yaml
+      @content = RDiscount.new(markdown).to_html
+      @title, @date = @meta['title'], Date.parse(@meta['date'])
     end
     def url
       @path =~ /\/(\d{4})-(\d{2})-([\w-]+).txt$/
       "/#{$1}/#{$2}/#{$3}"
+    end
+    def date_formatted
+      @date.strftime('%d %B %Y').sub(/^0/, '')
+    end
+    def <=>(other)
+       other.date <=> date
     end
   end
 
@@ -106,7 +113,7 @@ module Piccolo
     include Enumerable
     DIR = 'posts'
     def each
-      Dir.glob("#{DIR}/*.txt").each { |path| yield Post.new(path) }
+      Dir.glob("#{DIR}/*.txt").reverse.each { |path| yield Post.new(path) }
     end
     def post(year, month, stub)
       Post.new('%s/%04d-%02d-%s.txt' % [DIR, year, month, stub])

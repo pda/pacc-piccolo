@@ -3,6 +3,6 @@
     .blogpost
       %h2
         %a{:href => post.url}= post.title
-      %p.date= post.date
+      %p.date= post.date_formatted
       .blogpost-description
         ~ post.content
