@@ -1,8 +1,8 @@
 #recent-posts
-  - posts.each do |post|
+  - entries.each do |entry|
     .blogpost
       %h2
-        %a{:href => post.url}= post.title
-      %p.date= post.date_formatted
+        %a{:href => entry.url}= entry.title
+      %p.date= entry.date_formatted
       .blogpost-description
-        ~ post.content
+        ~ entry.content

@@ -29,7 +29,9 @@ module Piccolo
     def dispatch(request)
       # index
       if request.path == '/'
-        HamlView.new(:home, :posts => PostCollection.new).to_html
+        posts, links = PostCollection.new, LinkCollection.new
+        entries = (posts.to_a + links.to_a).sort
+        HamlView.new(:home, :entries => entries).to_html
 
       # page
       elsif /^\/([\w-]+)$/.match(request.path)
@@ -112,6 +114,12 @@ module Piccolo
     end
   end
 
+  class Link < Entry
+    def url
+      @meta['url']
+    end
+  end
+
   class PostCollection
     include Enumerable
     DIR = 'posts'
@@ -120,6 +128,17 @@ module Piccolo
     end
     def post(year, month, stub)
       Post.new('%s/%04d-%02d-%s.txt' % [DIR, year, month, stub])
+    end
+  end
+
+  class LinkCollection
+    include Enumerable
+    DIR = 'links'
+    def each
+      Dir.glob("#{DIR}/*.txt").reverse.each { |path| yield Link.new(path) }
+    end
+    def link(year, month, stub)
+      Link.new('%s/%04d-%02d-%s.txt' % [DIR, year, month, stub])
     end
   end
 
