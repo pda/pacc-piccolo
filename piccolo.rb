@@ -1,7 +1,4 @@
-require 'rubygems'
-require 'yaml'
-require 'haml'
-require 'rdiscount'
+%w{ rubygems yaml haml rdiscount }.each{ |r| require r }
 
 module Piccolo
 
