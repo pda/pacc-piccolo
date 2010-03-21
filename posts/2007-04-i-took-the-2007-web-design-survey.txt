@@ -1,0 +1,8 @@
+---
+title: I Took the 2007 Web Design Survey
+date: 2007/04/24 06:16:01 +1000
+modified: 2007/04/24 16:16:01 +1000
+uid: http://paul.annesley.cc/articles/2007/04/24/i-took-the-2007-web-design-survey
+
+<p>A quick and easy <a href="http://alistapart.com/articles/webdesignsurvey">survey from A List Apart</a>.  I'm looking forward to seeing the results.<br />
+<a href="http://alistapart.com/articles/webdesignsurvey"><img src='http://paul.annesley.cc/blog/wp-content/uploads/2007/04/i-took-the-2007-survey.gif' alt='A List Apart Web Design Survey' /></a></p>

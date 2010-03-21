@@ -1,0 +1,12 @@
+---
+title: Ubuntu 7.04 Feisty Fawn on Parallels - CD-ROM Detect Error
+date: 2007/04/21 06:45:56 +1000
+modified: 2007/04/21 16:45:56 +1000
+uid: http://paul.annesley.cc/articles/2007/04/21/ubuntu-704-feisty-fawn-on-parallels-cd-rom-detect-error
+
+<p><strong>UPDATE</strong>: Solaris CDROM emulation does the trick for Desktop Ubuntu.  For Ubuntu Server, read <a href="http://paul.annesley.cc/articles/2007/05/01/ubuntu-704-feisty-server-parallels-cdromkernel-workaround">Ubuntu 7.04 Feisty Server &amp; Parallels - CDROM/Kernel Workaround</a>.</p>
+<p>If you're trying to install Ubuntu 7.04 Feisty Fawn on Parallels Desktop for Mac, and getting an error like "No common CD-Rom drive was detected", this might save you some further googling.</p>
+<p>Apparently an issue introduced in some configurations of linux kernel 2.6.20 causes the Parallels emulated CD-ROM to not be detected.</p>
+<p>A <a href="http://forum.parallels.com/thread10308.html">workaround I found at the Parallels forums</a> suggests changing your virtual machine type from "Linux" to "Solaris" during installation.  This certainly got me past the CD-ROM detection error, and got Ubuntu server fully installed.</p>
+<p>Now... if only it would boot.</p>
+<p>EDIT: No luck with Parallels - I'm giving it a shot in VMware Fusion Beta.  Looks good so far...</p>

@@ -1,0 +1,17 @@
+---
+title: Australia on Rails / HeraHelios looks like a scam
+date: 2007/02/01 02:47:41 +1100
+modified: 2007/02/01 13:47:41 +1100
+uid: http://paul.annesley.cc/articles/2007/02/01/australia-on-rails-herahelios-looks-like-a-scam
+
+<p><strong>EDIT: <a href="http://www.loudthinking.com/"> David Heinemeier Hansson</a> has confirmed that this conference is in fact legitimate.  Apologies to whoever is actually behind the event.. HeraHelios?</strong></p>
+<p>It certainly looks like <a title="Australia on Rails" href="http://railsconfau.com/">Australia on Rails '07</a>, apparently sponsored by HeraHelios, is a scam.  The website is at railsconfau.com, but I would rather not give it any credibility by linking to it.<br />
+I received an email during the weekend from speakers@railsconfau.com to undisclosed recipients.  I'm not sure where they got my email, but I'm guessing it may have been from <a title="Paul Annesley at Working With Rails" href="http://workingwithrails.com/person/6959-paul-annesley">my profile at Working With Rails</a>.</p>
+<blockquote><p>Call For Speakers Now Open</p>
+<p>2007 will welcome the first inaugural Australia on Rails conference to Sydney. Australia on Rails will take place over two days and will provide a platform for education and exploration of the Rails platform as well as Ruby, AJAX, Scaling, web 2.0, user centric web development and design. It will be the largest Ruby on Rails meeting in the Asia Pacific region.</p></blockquote>
+<p>The websites at www.railsconfau.com struck me as being very anonymous, with no organiser, speakers or sponsors listed.  Initially they were using a logo adapted from the official Ruby on Rails logo, but a day later this was replaced by a more generic one.</p>
+<p>An early bird offer was initially available, something to the effect of "tickets only $500 if you buy in the next 24 hours".  This sounds like an attempt to drum up sales before anybody has a chance to talk to friends and co-workers first.<br />
+The event website is hosted by eventbrite.com which looks like it could easily be used anonymously to promote an event which isn't going to happen.</p>
+<p>The only company listed on the Australia on Rails website, HeraHelios, <a title="Google search for herahelios" href="http://www.google.com/search?q=herahelios">did not turn up at all in Google initially</a>.  Since then, one or two scam-indexes have appeared for the search term.</p>
+<p>I would suggest caution before submitting any details, let alone any payments to these guys, until you see the event talked about in the greater Rails community.</p>
+<p>Does anybody out there know anything about this event, or about HeraHelios?</p>

@@ -1,0 +1,28 @@
+---
+title: CLI History Meme
+date: 2008/12/15 13:35:27 +1100
+modified: 2008/12/16 00:35:27 +1100
+uid: http://paul.annesley.cc/articles/2008/12/15/cli-history-meme
+
+<p>I just came across <a href="http://rob.cogit8.org/blog/2008/Apr/11/command-line-history/" title="Command Line History">Rob Hudson's Command Line History</a>, which in turn reminded me of <a href="http://diveintomark.org/archives/2008/04/15/history-meme" title="History meme [dive into mark]">Mark Pilgrim's History meme</a> from back in April.</p>
+
+<p>After waiting a fashionably-late eight months, I'll use this as an excuse to find out if I can still publish to my site since hastily patching it up to Django 1.0 three months ago.  I suspect that says something about my technology vs. writing priorities.</p>
+
+<pre><samp>
+paul@macbuntupro:~$ uname -a
+Linux macbuntupro 2.6.24-21-server #1 SMP Wed Oct 22 00:18:13 UTC 2008 i686 GNU/Linux
+
+paul@macbuntupro:~$ cat .bash_history | awk '{print $1}' | sort | uniq -c | sort -rn | head
+    371 git
+     32 ruby
+     27 cd
+     15 ls
+     13 mysql
+      8 php
+      6 less
+      5 irb
+      4 vi
+      4 chmod
+</samp></pre>
+
+<p><a href="http://whygitisbetterthanx.com/" title="Why Git is Better than X">Git wins.</a></p>

@@ -1,0 +1,9 @@
+---
+title: CSS Naked Day 2008
+date: 2008/04/08 15:45:47 +1000
+modified: 2008/04/09 01:45:47 +1000
+uid: http://paul.annesley.cc/2008/08/css-naked-day
+
+<p>Tomorrow is <a href="http://naked.dustindiaz.com/">CSS Naked Day '08</a>, and websites around the intertubes will be stripping their styles and showing off their semantic markup.</p>
+
+<p>I figured I'd <a href="http://paul.annesley.cc/" title="My front page">get the ball rolling</a> a little early, to balance the fact that I'll inevitably forget to re-enable the styles for at least a week afterwards.</p>

@@ -1,0 +1,12 @@
+---
+title: A quote from _why
+date: 2009/01/23 15:00:37 +1100
+modified: 2009/01/24 02:00:37 +1100
+uid: http://paul.annesley.cc/articles/2009/01/23/why-x86
+
+<blockquote cite="http://github.com/why/potion/blob/b5953c2ef6265e54e8b6e2082f427b9c081ede48/INTERNALS">
+<p>On a related note, I would like to say something to all of the parties working on languages atop abstracted runtimes, such as the JVM and .Net and Parrot.</p>
+ <p>The first thing is: you should try targetting x86. It's very popular!</p>
+</blockquote>
+
+<p>&#8212; why the lucky stiff, <a href="http://github.com/why/potion/blob/b5953c2ef6265e54e8b6e2082f427b9c081ede48/INTERNALS">potion INTERNALS</a></p>

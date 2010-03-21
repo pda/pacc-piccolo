@@ -1,0 +1,24 @@
+---
+title: Browser Cookie Limits
+date: 2006/12/07 01:36:11 +1100
+modified: 2006/12/07 12:36:11 +1100
+uid: http://paul.annesley.cc/articles/2006/12/07/browser-cookie-limits
+
+<p>I've been working on a website where some users have reported their "Remember Me" session is often being lost by Internet Explorer.  The cause appears to be Internet Explorer rejecting cookies beyond a total of 20 for the domain.</p>
+<p><!--more--> Interestingly, Internet Explorer seems to be the only browser to correctly enforce the <strike>20 cookies per domain limit specified by <a title="RFC 2965: HTTP State Management Mechanism" href="http://tools.ietf.org/html/rfc2965">RFC 2965</a></strike></p>
+<p>Here are the limits enforced by the handful of browsers I have tested:</p>
+<ul>
+<li>Firefox 1.5: <strong>50</strong></li>
+<li>Firefox 2.0: <strong>50</strong></li>
+<li>Opera 9: <strong>30</strong></li>
+<li>Internet Explorer 6: <strong>20</strong></li>
+<li>Internet Explorer 7: <strong>20</strong></li>
+</ul>
+<p>Any new cookies beyond these limits are rejected by the browsers.</p>
+<p style="font-weight: bold">EDIT 30 March 2007</p>
+<p>Thanks to Tobias Hinnerup for pointing out that <a title="RFC 2965: HTTP State Management Mechanism" href="http://tools.ietf.org/html/rfc2965">RFC 2965</a> actually specifies that user agents must support "at least 20 cookies per unique host or domain name", rather than specifying a limit. This still implies a limit on the number of cookies we can assume a user agent adhering to the RFC will store.</p>
+<p>From the RFC:</p>
+<blockquote cite="http://rfc.net/rfc2965.html#s3.3.3">
+<p>Because user agents have finite space in which to store cookies, they MAY also discard older cookies to make space for newer ones, using, for example, a least-recently-used algorithm, along with constraints on the maximum number of cookies that each origin server may set.</p>
+<p><cite><a href="http://rfc.net/rfc2965.html#s3.3.3">RFC 2965 HTTP State Management Mechanism</a></cite>
+</p></blockquote>

@@ -1,0 +1,20 @@
+---
+title: Great Webate - Ajax Not The Future Of The Web
+date: 2007/08/03 14:40:19 +1000
+modified: 2007/08/04 00:40:19 +1000
+uid: http://paul.annesley.cc/articles/2007/08/04/great-webate-ajax-not-the-future-of-the-web
+
+<p>Last night was the Melbourne <a href="http://webstandardsgroup.org/">Web Standards Group</a>'s first ever <a href="http://webstandardsgroup.org/meetings/index.cfm?event_id=98">Great Webate</a>.  I teamed up with <a href="http://www.kevinyank.com/">Kevin Yank</a> to argue against the proposition <q>That Ajax Is The Future Of The Web</q>, with <a href="http://brothercake.com/" title="brothercake">James Edwards</a> and <a href="http://leftjustified.net/" title="Left Justified">Andrew Krespanis</a> arguing the affirmative.  As the first negative speaker, my argument went something like this...</p>
+<blockquote><p>I'm sorry to be the one to break it to you all, but Ajax is not the future of the web.  Now don't get me wrong - I know that people are achieving some great things with Ajax - especially considering all the pitfalls, inconsistencies and security models they need to work around.  They're doing great, and building great things.  But the future of the web? I don't think so.</p>
+<p>The web was designed around a simple page based model, and from this page based model, many more technologies emerged.</p>
+<ul>
+<li>HTTP servers and the HTTP protocol - a stateless protocol in which all identity information needs to be sent with every single request, Ajax or otherwise.</li>
+<li>Web browsers, with their bookmarks and history engines.</li>
+<li>Assistive technology for web pages, with the ability to read and skip through pages upon loading.</li>
+<li>Search engines, with the ability to run searches across many indexed and cached URLs, and the assumption that all the content of a page is held in its markup.</li>
+</ul>
+<p>This page based model was working well - but then one day someone told us we were only on version 1 of the web, and that we needed a shiny new web version 2.0.  (At the time we thought shiny was just a figure of speech.)</p>
+<p>With Web 2.0 came Ajax, and a new class of applications which provided a rich and responsive user experience by communicating with the server in the background, and making live updates to the page.  These "Connected Applications" are far more responsive and interactive than traditional web pages, and this is certainly a great thing.</p>
+<p>But as the technology grows up, we'll find that these Connected Apps are a square peg, and the web browser is a round hole.  This is why the big players like Adobe, Sun and Microsoft are investing in technology like AIR, Java Web Start and XAML to bring connected applications out of the browser, and away from the hacks and clunky security model of Ajax.</p>
+<p>Ajax has been a great here-and-now prototype for connected applications, but it is not the future of the web.</p></blockquote>
+<p>Stay tuned for a recap of my argument against the third debate proposition of the night, <q>That Tables Still Have A Place In Web Page Layout</q>...</p>

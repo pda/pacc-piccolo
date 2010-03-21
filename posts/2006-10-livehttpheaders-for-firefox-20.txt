@@ -1,0 +1,9 @@
+---
+title: LiveHTTPHeaders for Firefox 2.0
+date: 2006/10/30 00:48:12 +1100
+modified: 2006/10/30 11:48:12 +1100
+uid: http://paul.annesley.cc/articles/2006/10/30/livehttpheaders-for-firefox-20
+
+<p><strong>EDIT</strong>: <a href="http://paul.annesley.cc/articles/2006/11/14/livehttpheaders-version-0131-is-available"> LiveHTTPHeaders version 0.13.1 is available!</a></p>
+<p><a href="http://livehttpheaders.mozdev.org/">LiveHTTPHeaders</a> 0.12 seems to work fine with <a href="http://www.mozilla.com/products/firefox/">Firefox 2.0</a>, but the maxversion 1.5+ tag in the install.rdf prevents it from installing.</p>
+<p><a href="/wp-content/assets/livehttpheaders-0.12pda.xpi">Download LiveHTTPHeaders modified for Firefox 2.0</a> - I have modified only the version (0.12 => 0.12pda) and maxversion (1.5+ => 2.0+) in the install.rdf, nothing else is touched.</p>

@@ -1,0 +1,9 @@
+---
+title: VMware Fusion (Mac) 1.0 Final
+date: 2007/08/07 05:07:00 +1000
+modified: 2007/08/07 15:07:00 +1000
+uid: http://paul.annesley.cc/articles/2007/08/07/vmware-fusion-mac-10-final
+
+<p><a href="http://www.vmware.com/products/fusion/">VMware Fusion 1.0</a>, the long awaited competition to <a href="http://www.parallels.com/en/products/desktop/">Parallels Desktop</a>, was released today.  Unfortunately that also means the half price pre-order has also finished - but I got in just in time.</p>
+<p>After <a href="http://paul.annesley.cc/articles/2007/05/01/ubuntu-704-feisty-server-parallels-cdromkernel-workaround">endless woes with Ubuntu 7.04 Feisty Fawn under Parallels Desktop</a>, mainly revolving around <a href="http://paul.annesley.cc/articles/2007/04/21/ubuntu-704-feisty-fawn-on-parallels-cd-rom-detect-error">CDROM emulation problems</a>, I switched to VMware fusion beta quite a while ago, and have been very happy with it.  I haven't run Windows under Fusion yet, so haven't had a chance to try out "<a href="http://www.vmware.com/products/fusion/features.html#c25447">Unity</a>", Fusion's take on Parallels <a href="http://www.parallels.com/en/products/desktop/features/coherence/">Coherence</a> mode, but I've heard great things about it.</p>
+<p>The "Announcements" section of <a href="/">my front page</a> is driven off a tag feed from my <a href="http://www.google.com/reader/">Google Reader</a> - normally I would have just tagged a VMware release announcement, but I couldn't find a decent low traffic feed which included this announcement.  So I guess I'll publish this and then tag my own feed... crazy times.</p>

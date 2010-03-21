@@ -1,0 +1,16 @@
+---
+title: Visual Refreshment 2009
+date: 2009/01/09 21:39:25 +1100
+modified: 2009/01/10 08:39:25 +1100
+uid: http://paul.annesley.cc/articles/2009/01/09/visual-refreshment
+
+<p>To bring in the new year on a bright note, I decided to turf my old, tired, dark, noisy blue design.  Welcome to <em>paul.annesley.cc &#8212; 2009 edition</em>, with a refreshed, dare I say "cleaner" white design.</p>
+
+<p>Dropping a column and removing all the graphics, backgrounds, borders and so on was a simple task &#8212; a testament to CSS and the separation of structure and presentation.  Adjustments to the navigation and the addition of an <a href="/about">about page</a> were quick thanks to <a href="http://djangoproject.com/">Django</a>.</p>
+
+<p>Enjoy, and happy new year!</p>
+
+<div id="images20090109">
+<a href="http://paul.annesley.cc/assets/site-2008-blue.png"><img title="Old, tired blue three-column design" src="http://paul.annesley.cc/assets/site-2008-blue-small.png" alt="Very blue website screenshot" width="320" height="237" style="margin: 1em;"></a>
+<a href="http://paul.annesley.cc/assets/site-2009-white.png"><img title="New, refreshed white two column design!" src="http://paul.annesley.cc/assets/site-2009-white-small.png" alt="Very white website screenshot" width="320" height="237" style="margin: 1em;"></a>
+</div>

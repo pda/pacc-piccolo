@@ -1,0 +1,11 @@
+---
+title: Xdebug 2.0.0 Released
+date: 2007/07/25 14:55:19 +1000
+modified: 2007/07/26 00:55:19 +1000
+uid: http://paul.annesley.cc/articles/2007/07/26/xdebug-200-released
+
+<p>This one nearly slipped past me, what with the lack of any RSS/Atom feeds on <a href="http://xdebug.org/">http://xdebug.org/</a>, so I figured I should put it in one.</p>
+<p><a href="http://derickrethans.nl/xdebug_2_released.php">Xdebug 2.0.0 final has been released</a>.</p>
+<blockquote><p>After almost four years of work, Xdebug 2 is finally ready. With improved functionality and many new features it is ready to totally change the way you develop in PHP. Some of the new features and updates include improved stack traces, execution traces to files, code coverage analysis and much improved remote debugging support. Xdebug's documentation has also been rewritten for more clarity.</p></blockquote>
+<p>I've been using the betas and release candidates of Xdebug 2 for a while, and have been very impressed.  It does seem to have caused some pretty hefty memory leaks during long-running, data-crunching CLI PHP scripts, but hopefully that's been cleared up in this final release.</p>
+<p>Thanks to <a href="http://derickrethans.nl/who.php">Derick Rethans</a> for all his hard work.</p>

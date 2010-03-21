@@ -1,0 +1,8 @@
+---
+title: WordPress Upgraded, Atom Feed via FeedBurner
+date: 2007/12/23 06:12:37 +1100
+modified: 2007/12/23 17:12:37 +1100
+uid: http://paul.annesley.cc/articles/2007/12/23/wordpress-upgraded-atom-feed-via-feedburner
+
+<p>I've just upgraded WordPress, and while I was there it seemed a good time to switch from RSS to Atom feeds, and deliver them via FeedBurner.</p>
+<p>I've always been interested to see how different feed readers handle a feed switching from RSS to Atom - I guess I'll find out.  The new Atom entry IDs are the same as the old RSS item IDs, so hopefully we wont see duplicated posts...</p>

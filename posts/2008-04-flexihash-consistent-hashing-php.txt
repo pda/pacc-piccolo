@@ -1,0 +1,86 @@
+---
+title: Flexihash - Consistent Hashing for PHP
+date: 2008/04/30 23:43:15 +1000
+modified: 2008/05/01 09:43:15 +1000
+uid: http://paul.annesley.cc/2008/04/30/flexihash-consistent-hashing-php
+
+<p>After reading <a href="http://www.spiteful.com/2008/03/17/programmers-toolbox-part-3-consistent-hashing/" title="Programmer&#039;s Toolbox Part 3: Consistent Hashing">Tom Kleinpeter&#039;s article on consistent hashing</a> last month, I was inspired to write <a href="http://code.google.com/p/flexihash/" title="flexihash - Google Code">Flexihash</a>, an open source consistent hashing implementation for PHP, as I couldn&#039;t see anything decent around that fit the bill.</p>
+
+<p>But first, a little bit of background and a use case example.  C&#039;mon, humor me&hellip;</p>
+
+<h3>Balancing Act</h3>
+
+<p>There&#039;s a few reasons why a large website would want to spread their images (and other resources) out across several URLs.  One reason is that web browsers limit the amount of concurrent connections per hostname, and the speed benefits of greater concurrency can be achieved by using multiple hostnames throughout a page.  Another reason is so that the requests can be spread across multiple servers without funneling though a single load balancer.</p>
+
+<p>To spread the images across multiple URLs, there needs to be a way to map a given URL path to one of the available servers.  Once downloaded, the image will be cached in users browsers based on its URL, so every effort must be made to serve it from the same hostname in future.  This rules out picking one of the servers at random each time.</p>
+
+<h3>Hashing</h3>
+
+<p>A <a href="http://en.wikipedia.org/wiki/Hash_function" title="Hash function - Wikipedia">hash function</a> consistently maps given data (anything, but in this case an image path) to a relatively small integer.  Hash functions are consistent by definition, but don&#039;t confuse them with <em>consistent hashing</em> - read on!</p>
+
+<p>Using a hash function (or a hash-like function such as CRC32), it would seem the goal is easily achievable.  Hash the image path to an integer, modulus it by the number of servers, and look up the server at that index.</p>
+
+<pre><code class="psuedo">servers = [s1, s2, s3]
+servers[HASH(/path/to/image.png) % servers.length] # => s2
+</code></pre>
+
+<h3>Thrashing</h3>
+
+<p>The trouble with hashing is that it turns into thrashing the moment the list of servers changes.  If another server is added to handle increased load, it&#039;ll certainly get a good workout, as suddenly most of the image URLs are hashing to a different hostname, missing the users browser cache, missing the front proxy cache and pummeling the servers.  If a server is removed, even worse, as there&#039;ll be less cannon fodder for flood of HTTP.</p>
+
+<h3>Consistent Hashing</h3>
+
+<p><em>Onto the good stuff&hellip;</em></p>
+
+<p>As with most problems in life, the logical solution starts with drawing a ring to represent your hash address space as a continuum.  I solve just about everything that way.  Randomly placing a dot somewhere on the enormous ring for each of a handful of servers will likely result in uneven distribution, which can be fixed by adding another hundred or so randomly placed dots for each server.</p>
+
+<p>The whole idea sounds pretty strange, until you realise that you can now hash any of the image paths to a point on that ring, and then moving clockwise, pick the closest server.  If a server is added, it wont get in the way of many lookups, and if one is removed it wont be sorely missed.</p>
+
+<pre><samp>paulbookpro:flexihash paul$ php tests/runtests.php --with-benchmark
+All Tests
+NonConsistentHash: 92% of lookups changed after adding a target to the existing 10
+NonConsistentHash: 90% of lookups changed after removing 1 of 10 targets
+ConsistentHash: 6% of lookups changed after adding a target to the existing 10
+ConsistentHash: 9% of lookups changed after removing 1 of 10 targets
+Distribution of 100 lookups per target (min/max/median/avg): 71/126/109/100
+&hellip;
+</samp></pre>
+
+<p>Of course, consistent hashing has far more useful applications than distributing URLs. In applications like server-side distributed caching (e.g. <a href="http://www.danga.com/memcached/" title="memcached: a distributed memory object caching system">memcached</a>), consistent hashing has another great property - redundant writes.  When picking a server to write a cache item to, rather than stopping at the closest server on the ring, continuing to move clockwise will find the second best server for that item.  Writing the cache item to the first and second best server means removing the first one causes little to no cache misses.</p>
+
+<pre><code class="php">// write cache item to both targets in case cache-2 is removed
+$hash->lookupList(&#039;object&#039;, 2); // [cache-2, cache-4]
+$hash->removeTarget(&#039;cache-2&#039;);
+$hash->lookup(&#039;object&#039;); // cache-4
+</code></pre>
+
+<h3>Check It Out</h3>
+
+<p><strong>Update Feb 2009:</strong> ignore the following paragraph, find <a href="http://github.com/pda/flexihash">Flexihash at GitHub!</a></p>
+
+<p>You can grab <a href="http://code.google.com/p/flexihash/" title="flexihash - Google Code">Flexihash</a> from Google code, either as a source archive, a single bundled PHP file, or <a href="http://code.google.com/p/flexihash/source/browse/trunk">via Subversion</a> (I&#039;m not cool enough to be using <a href="http://git.or.cz/" title="Git – Fast Version Control System">Git</a> just yet).  There&#039;s also some pretty graphs, stats and information at <a href="http://www.ohloh.net/projects/flexihash" title="Flexihash - Ohloh">Flexihash on Ohloh</a> which suggest Flexihash is crap. Don&#039;t believe the lies!</p>
+
+<pre><code class="php">&lt;?php
+require_once(&#039;flexihash.php&#039;);
+
+$hash = new Flexihash();
+
+// bulk add
+$hash->addTargets(array(&#039;cache-1&#039;, &#039;cache-2&#039;, &#039;cache-3&#039;));
+
+// simple lookup
+$hash->lookup(&#039;object-a&#039;); // cache-1
+$hash->lookup(&#039;object-b&#039;); // cache-2
+
+// add and remove
+$hash
+	->addTarget(&#039;cache-4&#039;)
+	->removeTarget(&#039;cache-1&#039;);
+
+// lookup with next-best fallback (for redundant writes)
+$hash->lookupList(&#039;object&#039;, 2); // [cache-2, cache-4]
+
+// remove cache-2, expect object to hash to cache-4
+$hash->removeTarget(&#039;cache-2&#039;);
+$hash->lookup(&#039;object&#039;); // cache-4
+</code></pre>

@@ -1,0 +1,10 @@
+---
+title: Lua climbs in TIOBE software index
+date: 2007/03/07 02:02:36 +1100
+modified: 2007/03/07 13:02:36 +1100
+uid: http://paul.annesley.cc/articles/2007/03/07/lua-climbs-in-tiobe-software-index
+
+<p><a title="Lua - The Programming Language" href="http://www.lua.org/">Lua</a>, the lightweight language behind <a title="lighttpd web server" href="http://lighttpd.net/">lighttpd</a>'s <a title="mod_magnet for lighttpd" href="http://trac.lighttpd.net/trac/wiki/Docs%3AModMagnet">mod_magnet</a>, has climbed from position 44 to position 25 in the <a title="TIOBE Programming Community Index" href="http://www.tiobe.com/index.htm?tiobe_index">TIOBE Programming Community Index</a>.  Maybe we'll see it in the top 20 soon...<br />
+Lua is also a popular language for game scripting engines, perhaps most notably being used in <a title="World of Warcraft - Blizzard Software" href="http://www.worldofwarcraft.com/">World of Warcraft</a> as an embedded scripting language for the UI subsystem.</p>
+<p>Those who get their kicks from network monitoring (such as myself) rather than online gaming may have come across Lua in <a title="Wireshark (formerly Ethereal)" href="http://www.wireshark.org/">Wireshark</a> (formerly Ethereal).</p>
+<p>I found Lua nice and easy to learn and work with while writing a CSS/Javascript bundler for lighttpd/mod_magnet.</p>

@@ -1,0 +1,7 @@
+---
+title: Lua Enters TIOBE Top 20
+date: 2007/07/18 00:00:24 +1000
+modified: 2007/07/18 10:00:24 +1000
+uid: http://paul.annesley.cc/articles/2007/07/18/lua-enters-tiobe-top-20
+
+<p><a href="http://www.tiobe.com/index.htm?tiobe_index">Lua</a>, the speedy, lightweight language which drives <a href="http://lighttpd.net/">lighttpd</a>'s <a href="http://trac.lighttpd.net/trac/wiki/Docs%3AModMagnet">mod_magnet</a> and many game scripting engines, has continued <a href="http://paul.annesley.cc/articles/2007/03/07/lua-climbs-in-tiobe-software-index" title="paul.annesley.cc  &raquo; Lua climbs in TIOBE software index">its climb</a> up the <a href="http://www.tiobe.com/index.htm?tiobe_index">TIOBE Programming Community Index</a>, coming in at 18th place for July 2007.</p>

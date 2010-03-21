@@ -1,0 +1,11 @@
+---
+title: Digg API enforces Application Key requirement
+date: 2007/04/23 06:00:51 +1000
+modified: 2007/04/23 16:00:51 +1000
+uid: http://paul.annesley.cc/articles/2007/04/23/digg-api-enforces-application-key-requirement
+
+<p>The <a href="http://digg.com/">Digg.com</a> <a href="http://apidoc.digg.com/">API</a> has just begun enforcing the requirement that an <a href="http://apidoc.digg.com/ApplicationKeys">application key</a> be provided with all API requests.</p>
+<p>API requests without a key will be met with an HTTP/1.1 403 Forbidden:<br />
+<code>&lt;error code="1005" message="Application key required" /&gt;</code></p>
+<p>This will no doubt temporarily break a few early adopter applications which were getting by thus far without using a key.</p>
+<p>The application key is to be provided as an "appkey" CGI parameter (query string or POST data), and should be the URL most relevant to the application performing the API requests.  Currently, Digg.com does not issue or authenticate the keys - just stick in your website URL.</p>

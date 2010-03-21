@@ -1,0 +1,29 @@
+---
+title: Great Webate - Tables Have No Place In Web Page Layout
+date: 2007/08/25 05:35:15 +1000
+modified: 2007/08/25 15:35:15 +1000
+uid: http://paul.annesley.cc/articles/2007/08/25/great-webate-tables-have-no-place-in-web-page-layout
+
+<p>As promised, I'm finally posting my notes from my second debate in the Melbourne <a href="http://webstandardsgroup.org/">Web Standards Group</a>'s first ever <a href="http://webstandardsgroup.org/meetings/index.cfm?event_id=98">Great Webate</a>.</p>
+<p>The proposition was that <q>Tables Still Have A Place In Web Page Layout</q>, and it was up to <a href="http://brothercake.com" title="brothercake">James Edwards</a> and I to convince the crowd that such a statement just wasn't going to fly in the 21st century.  Our unfortunate opponents were <a href="http://www.kevinyank.com/">Kevin Yank</a> and <a href="http://leftjustified.net/" title="Left Justified">Andrew Krespanis</a>, and I must say they made a brave albeit <a href="http://www.flickr.com/photos/melbournewsg/1004387747/" title="Kevin Yank loves tables">sometimes desperate</a> attempt, given the proposition and the audience.</p>
+<p>My argument was along these lines&hellip;</p>
+<p><strong>Once upon a time, when most sites boasted &quot;Best viewed in Netscape 4&quot; or &quot;Powered by Frontpage&quot;, tables were great. Possibly even as good as framesets!  With just a handful of table rows, plenty of data cells, and a sprinkling of spacer GIFs, you could place your spinning mailbox icon anywhere you liked!</strong></p>
+<p>But thankfully those days are gone, and with them, the need to use tables for web page layout. Jump forwards a few years, and we're in a whole new era.</p>
+<blockquote cite="http://hotdesign.com/seybold/everything.html">
+<p>&quot;The use of tables is now actually interfering with building a better, more accessible, flexible, and functional Web.&quot;</p>
+<p><cite><a href="http://hotdesign.com/seybold/everything.html">http://hotdesign.com/seybold/everything.html</a></cite>
+</p></blockquote>
+<h4>Semantics</h4>
+<p>HTML, in its various forms and versions, is quite rich with semantics. The correct use of heading levels and paragraphs alone can introduce valuable structure to a document. Correct use of tables&#8212;for tabular data, rather than layout&#8212;is also an invaluable tool. But when all of the content is contained in layers of nested tables, determining the document structure based on the markup alone becomes near impossible. When you have a rich set of tags for describing your content, why try to jam it all into tables?</p>
+<h4>Design&#8212;Locked In, Inflexible</h4>
+<blockquote cite="http://www.htmldog.com/ptg/archives/000049.php">
+<p>&quot;Forgetting semantics&#8212;because that's essentially what you're doing when you use tables for page layout&#8212;CSS based layout still has the massive benefit of separating content and presentation. A table will lock you into a design.&quot;</p>
+<p><cite><a href="http://www.htmldog.com/ptg/archives/000049.php">http://www.htmldog.com/ptg/archives/000049.php</a></cite>
+</p></blockquote>
+<h4>Page Size &amp; Cacheability</h4>
+<p>Using tables for layout means very verbose markup that needs to be defined again and again on every page, rather than in a central (and cacheable) style sheet. Apart from making a site very expensive to maintain and redesign, this also means that every page load will be larger. Now, you might say that a few extra kilobytes per page doesn't matter, but this is important for mobile Internet devices. Coupled with the fact that they do not scale well on small screens, table based layouts are clearly inappropriate for mobile devices.</p>
+<h4>Markup as an API</h4>
+<p>More and more, the value of cleanly structured markup is becoming apparent. The standardization of various microformats allows web authors to add small pieces of metadata to their markup to introduce rich semantics which are easily discovered and interpreted by machines. This has led to the view of markup as an API. Personally, I don't fancy working with any API that lives in seven layers of nested tables.</p>
+<h4>User Style Sheets and User Scripts, Accessibility</h4>
+<p>Even if you don't plan on utilizing microformats in your content, you are giving your users much greater value by providing clean, semantic markup. Users with special needs will be able to easily apply user style sheets and scripts to make your website accessible.</p>
+<p>User style sheets aside, the WCAG1 states <q cite="http://www.w3.org/TR/WCAG10-HTML-TECHS/#tables-layout">Authors should use style sheets for layout and positioning.</q> The message is quite clear: <q cite="http://www.w3.org/TR/WCAG10-HTML-TECHS/#tables-layout">Do not use tables for layout...</q></p>

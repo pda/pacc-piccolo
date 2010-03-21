@@ -1,0 +1,8 @@
+---
+title: Firebug 1.0 Final!
+date: 2007/01/25 05:45:29 +1100
+modified: 2007/01/25 16:45:29 +1100
+uid: http://paul.annesley.cc/articles/2007/01/25/firebug-10-final
+
+<p>Joe Hewitt has <a title="One Dot Oh" href="http://www.getfirebug.com/blog/2007/01/24/one-dot-oh/">announced Firebug 1.0 final</a>, after sneaking <a title="Computed Style" href="http://www.getfirebug.com/blog/2007/01/17/computed-style/">support for viewing computed styles into beta 9</a>.  Since I started using Firebug in it's 0.3 days, it has completely changed my approach (and attitude) to front-end design and programming work in HTML, CSS and JavaScript.  As a Firefox extension, it's immense functionality and beautiful simplicity continue to amaze me.<br />
+As Joe points out, there are tens or hundreds of thousands people still using the previous stable 0.4.1 release, which was downloaded 840,000 times from the official <a title="Firebug | Firefox Add-ons" href="https://addons.mozilla.org/firefox/1843/">Firefox Add-ons site</a> alone!  They are going to get a very nice surprise when the automatic update comes through.</p>

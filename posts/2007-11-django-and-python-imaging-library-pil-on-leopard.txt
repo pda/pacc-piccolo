@@ -1,0 +1,29 @@
+---
+title: Django and Python Imaging Library (PIL) on Leopard
+date: 2007/11/19 13:05:46 +1100
+modified: 2007/11/20 00:05:46 +1100
+uid: http://paul.annesley.cc/articles/2007/11/19/django-and-python-imaging-library-pil-on-leopard
+
+<p><a href="http://www.djangobook.com/en/beta/chapter05/#cn125">Chapter 5</a> of the excellent <a href="http://www.djangobook.com/">Django Book</a> makes use of <a href="http://www.djangoproject.com/documentation/model-api/#imagefield" title="Django | Model reference | Django Documentation">django.db.models.URLField()</a>.</p>
+<p>When running under the default Python 2.5 environment shipped with Mac OS 10.5 Leopard, this causes an error something along these lines:</p>
+<pre><samp>$ ./manage.py validate
+Error: One or more models did not validate:
+books.author: "headshot": To use ImageFields, you need to install the Python Imaging Library. Get it at http://www.pythonware.com/products/pil/ .
+</samp></pre><p>
+Assuming you've installed <a href="http://developer.apple.com/tools/xcode/" title="Apple XCode">XCode</a> (go on, you know you want to..) this can be solved like so:</p>
+<p><strong>Install libjpeg</strong></p>
+<pre><code>wget http://www.ijg.org/files/jpegsrc.v6b.tar.gz
+tar zxvf jpegsrc.v6b.tar.gz
+cd jpeg-6b/
+./configure
+make
+sudo make install-lib
+</code></pre><p>
+<strong>Install Python Imaging Library (PIL)</strong></p>
+<pre><code>wget http://effbot.org/media/downloads/Imaging-1.1.6.tar.gz
+tar zxvf Imaging-1.1.6.tar.gz 
+cd Imaging-1.1.6
+sudo python setup.py install
+</code></pre><p>
+Not too hard, but still, <a href="http://diveintomark.org/archives/2007/11/11/installing-mysql-on-ubuntu" title="Installing MySQL on Ubuntu (the NSFW way) [dive into mark]">sucks to be us Apple users sometimes</a>.  If my Ubuntu Server virtual machine didn't make my laptop run so damn hot, I'd be using that.  Are <a href="http://kerneltrap.org/node/7749" title="Linux:  2.6.21-rc1, Dynticks Merged | KernelTrap">tickless kernels</a> and <a href="http://www.lesswatts.org/projects/powertop/">PowerTOP</a> helping anyone on this front yet?</p>
+<p>If it all looks too hard, I'm sure <a href="http://www.macports.org/">MacPorts</a> (or is it <a href="http://darwinports.com/">DarwinPorts</a>? who knows) will hold your hand.</p>

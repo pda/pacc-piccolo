@@ -1,0 +1,38 @@
+---
+title: PHP 5.2.1 bug breaks SimpleTest
+date: 2007/06/01 12:28:10 +1000
+modified: 2007/06/01 22:28:10 +1000
+uid: http://paul.annesley.cc/articles/2007/06/01/php-521-bug-breaks-simpletest
+
+<p>The <a href="http://simpletest.sourceforge.net/">SimpleTest</a> unit testing and mock object framework for PHP by Marcus Baker at <a href="http://www.lastcraft.com/simple_test.php">The Last Craft</a> is broken in PHP 5.2.1 due to <a href="http://bugs.php.net/bug.php?id=40768">PHP bug 40768</a>.</p>
+<p>The bug causes an infinite loop when 'break' is called in a foreach loop within another foreach loop, when both are looping over variables that internally reference the same array.</p>
+<pre><code>
+$counter = 0;
+$a = $b = array(1,2,3); 
+foreach ($a as $outer)
+{
+        echo "$outer, ";
+        if ($counter++ > 10) die("... infinite loop!\
+");
+        foreach ($b as $inner) break;
+}
+// expected output: 1, 2, 3,
+// actual output: 1, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3 ... infinite loop!
+</code></pre><p>
+In SimpleTest (including the latest 1.0.1 beta), SimpleReflection::_onlyParents() in reflection_php5.php uses a break within a nested foreach like the one above.  The bug seems to cause all tests using mock objects to hang and cause heavy CPU load.</p>
+<p>The bug has been fixed in PHP 5.2.2, but if you need to stick with PHP 5.2.1 (the current Ubuntu php5 version) here's a quick patch to SimpleTest 1.0.1 beta (also 1.0.1 alpha3) which should do the job.</p>
+<pre><code>
+--- simpletest-101b-orig/reflection_php5.php    2007-05-31 21:17:10.000000000 +1000
++++ simpletest-101b/reflection_php5.php 2007-05-31 21:16:03.000000000 +1000
+@@ -171,6 +171,7 @@
+         function _onlyParents($interfaces) {
+             $parents = array();
++                       $interfacesCopy = array();
++                       foreach ($interfaces as $k=>$v) $interfacesCopy[$k] = $v;
+             foreach ($interfaces as $interface) {
+-                foreach($interfaces as $possible_parent) {
++                foreach($interfacesCopy as $possible_parent) {
+                     if ($interface->getName() == $possible_parent->getName()) {
+                         continue;
+</code></pre><p>
+Can anybody suggest a simple, clean way to force PHP to copy an array, without iterating over it like this? Keep in mind that although arrays are not normally passed by reference, an array copy is handled internally by reference until one of the copies is modified, and it would seem that changes to the array pointer do not count as a modification.</p>

@@ -1,0 +1,8 @@
+---
+title: Down with PHP4
+date: 2007/07/14 05:47:18 +1000
+modified: 2007/07/14 15:47:18 +1000
+uid: http://paul.annesley.cc/articles/2007/07/14/25
+
+<p><a href="http://www.php.net/index.php#2007-07-13-1">PHP 4 end of life announcement</a> - Hooray.. about time.  See also <a href="http://gophp5.org/">GoPHP5.org - helping speed the transition to PHP 5.2</a></p>
+<blockquote><p>Today it is exactly three years ago since PHP 5 has been released. In those three years it has seen many improvements over PHP 4. PHP 5 is fast, stable &amp; production-ready and as PHP 6 is on the way, PHP 4 will be discontinued.</p></blockquote>

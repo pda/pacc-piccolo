@@ -1,0 +1,46 @@
+---
+title: Static content twice the speed with lighttpd
+date: 2006/12/22 10:13:36 +1100
+modified: 2006/12/22 21:13:36 +1100
+uid: http://paul.annesley.cc/articles/2006/12/22/static-content-twice-the-speed-with-lighttpd
+
+<p>I have done a basic benchmark  between <a title="Apache HTTPD" href="http://httpd.apache.org/">Apache 2.2</a> and <a title="LightTPD" href="http://lighttpd.net/">lighttpd 1.4</a> for serving the static files on this <a title="WordPress - Blog Tool and Weblog Platform" href="http://wordpress.org/">WordPress</a> installation, using the <a title="ab - Apache HTTP server benchmarking tool" href="http://httpd.apache.org/docs/2.2/programs/ab.html">Apache "ab" benchmarking tool</a>.</p>
+<p>Apache is running prefork MPM, mod_ssl and mod_php5.  LightTPD is running with minimal modules loaded for serving static content.  Both are running on the same machine, on a Linux 2.6.17 kernel.<br />
+<!--more--> Here is the diff of the outputs from each ab benchmark, requesting a static CSS file 10,000 times without HTTP keepalive:</p>
+<blockquote><p>--- apache.ab.txt       2006-12-22 20:23:20.000000000 +1100<br />
++++ lighttpd.ab.txt     2006-12-22 20:23:22.000000000 +1100<br />
+@@ -5 +5 @@<br />
+-Benchmarking paul.annesley.cc (be patient)<br />
++Benchmarking static.annesley.cc (be patient)<br />
+@@ -18,3 +18,3 @@<br />
+-Server Software:        Apache/2.2.3<br />
+-Server Hostname:        paul.annesley.cc<br />
+-Server Port:            80<br />
++Server Software:        lighttpd/1.4.13<br />
++Server Hostname:        static.annesley.cc<br />
++Server Port:            81<br />
+@@ -26 +26 @@<br />
+-Time taken for tests:   12.865701 seconds<br />
++Time taken for tests:   6.837737 seconds<br />
+@@ -30 +30 @@<br />
+-Total transferred:      97570000 bytes<br />
++Total transferred:      97030000 bytes<br />
+@@ -32,4 +32,4 @@<br />
+-Requests per second:    777.26 [#/sec] (mean)<br />
+-Time per request:       1.287 [ms] (mean)<br />
+-Time per request:       1.287 [ms] (mean, across all concurrent requests)<br />
+-Transfer rate:          7405.97 [Kbytes/sec] received<br />
++Requests per second:    1462.47 [#/sec] (mean)<br />
++Time per request:       0.684 [ms] (mean)<br />
++Time per request:       0.684 [ms] (mean, across all concurrent requests)<br />
++Transfer rate:          13857.65 [Kbytes/sec] received<br />
+@@ -39,3 +39,3 @@<br />
+-Connect:        0     0    6<br />
+-Processing:     1     1    9<br />
+-Total:          1     1   15<br />
++Connect:        0     0    1<br />
++Processing:     0     0    5<br />
++Total:          0     0    6</p></blockquote>
+<p>A crude test, but I think 6.8 seconds vs 12.8 seconds speaks for itself.  This performance increase should ease the load average on high traffic servers, which may in turn speed up other tasks such as processing PHP.  I am very keen to do more thorough, controlled comparisons when time permits.<br />
+It would be quite easy to increase the performance of Apache, perhaps even beyond LightTPD.  Just by leaving out mod_php5 and thus being able to compile with a more efficient MPM than prefork would probably put it back in the game.</p>
+<p>The main point is that a separate, lighter HTTP server will get your static content to your users faster.</p>

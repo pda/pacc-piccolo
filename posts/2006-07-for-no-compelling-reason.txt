@@ -1,0 +1,8 @@
+---
+title: for no compelling reason...
+date: 2006/07/21 04:56:52 +1000
+modified: 2006/07/21 14:56:52 +1000
+uid: http://paul.annesley.cc/?p=4
+
+<p>From Netscape's <a href="http://curl.haxx.se/rfc/cookie_spec.html">Preliminary Specification for HTTP cookies</a>:</p>
+<p>"The state object is called a <strong>cookie</strong>, for no compelling reason."</p>

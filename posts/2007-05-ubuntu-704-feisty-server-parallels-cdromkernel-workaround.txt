@@ -1,0 +1,36 @@
+---
+title: Ubuntu 7.04 Feisty Server & Parallels - CDROM/Kernel Workaround
+date: 2007/05/01 11:39:05 +1000
+modified: 2007/05/01 21:39:05 +1000
+uid: http://paul.annesley.cc/articles/2007/05/01/ubuntu-704-feisty-server-parallels-cdromkernel-workaround
+
+<p>Parallels and the Linux 2.6.20 kernel included with the latest Ubuntu release (7.04 - Feisty Fawn) do not get along well.  Firstly, the installer fails to detect the CDROM drive emulated by Parallels.  Then, if you manage to get Ubuntu installed using a workaround, the server kernel (vmlinuz-2.6.20-16-server) will not boot.</p>
+<p>Here's a workaround that I've come up with to install Ubuntu 7.04 Feisty Fawn Server on Parallels (build 3188).  I installed it from the server ISO (ubuntu-7.04-server-i386.iso), but the same instructions should apply for installing Ubuntu Server from the full DVD ISO.</p>
+<p><strong>Create New Virtual Machine</strong></p>
+<p>Create a new custom virtual machine, with OS Type set to Linux : Other Linux kernel 2.6.  I gave mine 256mb RAM and an 8gb expanding disk.  On the Insert CD / CD Selection screen, use More Options to point Parallels at your ISO image.  Also, untick "Start Linux Kernel 2.6 installation", as we need to work around the first issue before starting up.</p>
+<p><strong>Switch to Solaris</strong></p>
+<p>No, don't pack it in with Ubuntu completely.  Just edit your virtual machine configuration and change the OS Type to Solaris : Solaris 10.  You could have chosen Solaris during VM creation, but then your VM files would have been misnamed.  Switching to Solaris was suggested by a <a href="http://forums.parallels.com/post53852-5.html">Parallels Forums member</a> to work around the initial CDROM detection error.  I don't fully understand why it works - I assume it puts Parallels into a slightly different CDROM emulation mode.</p>
+<p><strong>Start and Install</strong></p>
+<p>Start your virtual machine, and get the Ubuntu installer going.  If you're installing off the server ISO, you'll just need to hit ENTER at the boot prompt.  If you want to install Ubuntu server off the DVD ISO, you'll have to type "server" at the boot prompt.  Proceed as normal, until you get to the message saying "Installation Complete".  DON'T choose continue just yet...</p>
+<p><strong>Roll Up Your Sleeves</strong></p>
+<p>On the "Installation Complete" dialogue, choose "Go Back", and then select "Execute a shell" from the menu.  Swap from the problematic server kernel to the generic kernel with the following commands:</p>
+<pre><code>
+umount /dev/scd0
+chroot /target /bin/bash
+mount /dev/scd0 /media/cdrom
+aptitude install linux-generic
+aptitude remove linux-server linux-image-server linux-image-2.6.20-15-server
+exit
+shutdown -h now
+</code></pre><p>
+Make sure you STOP the VM before it starts to boot up again.  Reconfigure it back to Linux : Other Linux 2.6, and then start it up.</p>
+<p><strong>A Few Errors</strong></p>
+<p>I've run through this process a couple of times, and upon booting up Ubuntu for the first time, I've had a different set of errors each time, but none of them have been a problem in the long run.</p>
+<p>There always seems to be problems like this, but the seem to be safe to ignore.</p>
+<pre><samp>
+ata1.01: exception Emask 0x0 Sact 0x0 SErr 0x0 action 0x0
+ata1.01 (BMDMA stat 0x66)
+ata1.01: cmd a0/01:00:00:00:00/00:00:00:00:00/b0 tag 0 cdb 0x12 data 36 in
+</samp></pre><p>
+On a couple of installs I also had filesystem errors, with complaints about timestamps being in the future.  I suspect this is to do with a dodgy realtime clock in Linux under virtualization.  An automatic fsck repair and reboot fixed it right up, and it hasn't bothered me since.</p>
+<p>If and when Ubuntu releases a server kernel compatible with Parallels, or Parallels releases a fix for this issue, you should be able to swap back to the server kernel using aptitude.  As far as I can tell, there's no problem running the generic kernel instead of the server kernel.  Any thoughts?</p>

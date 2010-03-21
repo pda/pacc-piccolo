@@ -1,0 +1,8 @@
+---
+title: Firebug 1.0 betas just keep coming
+date: 2006/12/15 01:56:02 +1100
+modified: 2006/12/15 12:56:02 +1100
+uid: http://paul.annesley.cc/articles/2006/12/15/firebug-10-betas-just-keep-coming
+
+<p><a href="http://joehewitt.com/">Joe Hewitt</a> is doing a great job on the <a href="http://www.getfirebug.com/">Firebug 1.0</a> development, with five betas released in the space of nine days. Nice work!<br />
+If you do any kind of work involving HTML, JavaScript, CSS or HTTP and you haven't come across the FireBug extension for Firefox yet, you seriously need to download it now.  The previous 0.x releases were incredible, and version 1.0 is just mind blowing.</p>
