@@ -1,6 +1,6 @@
 ---
 title: Django and Python Imaging Library (PIL) on Leopard
-date: 2007/11/19 13:05:46 +1100
+time: 2007/11/19 13:05:46 +1100
 modified: 2007/11/20 00:05:46 +1100
 uid: http://paul.annesley.cc/articles/2007/11/19/django-and-python-imaging-library-pil-on-leopard
 

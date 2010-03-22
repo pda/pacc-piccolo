@@ -1,6 +1,6 @@
 ---
 title: LiveHTTPHeaders for Firefox 2.0
-date: 2006/10/30 00:48:12 +1100
+time: 2006/10/30 00:48:12 +1100
 modified: 2006/10/30 11:48:12 +1100
 uid: http://paul.annesley.cc/articles/2006/10/30/livehttpheaders-for-firefox-20
 

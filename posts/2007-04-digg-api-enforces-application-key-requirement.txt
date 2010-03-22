@@ -1,6 +1,6 @@
 ---
 title: Digg API enforces Application Key requirement
-date: 2007/04/23 06:00:51 +1000
+time: 2007/04/23 06:00:51 +1000
 modified: 2007/04/23 16:00:51 +1000
 uid: http://paul.annesley.cc/articles/2007/04/23/digg-api-enforces-application-key-requirement
 

@@ -1,6 +1,6 @@
 ---
 title: Lua Enters TIOBE Top 20
-date: 2007/07/18 00:00:24 +1000
+time: 2007/07/18 00:00:24 +1000
 modified: 2007/07/18 10:00:24 +1000
 uid: http://paul.annesley.cc/articles/2007/07/18/lua-enters-tiobe-top-20
 

@@ -1,6 +1,6 @@
 ---
 title: Down with PHP4
-date: 2007/07/14 05:47:18 +1000
+time: 2007/07/14 05:47:18 +1000
 modified: 2007/07/14 15:47:18 +1000
 uid: http://paul.annesley.cc/articles/2007/07/14/25
 

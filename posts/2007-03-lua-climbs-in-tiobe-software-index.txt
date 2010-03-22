@@ -1,6 +1,6 @@
 ---
 title: Lua climbs in TIOBE software index
-date: 2007/03/07 02:02:36 +1100
+time: 2007/03/07 02:02:36 +1100
 modified: 2007/03/07 13:02:36 +1100
 uid: http://paul.annesley.cc/articles/2007/03/07/lua-climbs-in-tiobe-software-index
 

@@ -1,4 +1,4 @@
-%w{ rubygems yaml haml rdiscount builder }.each{ |r| require r }
+%w{ time rubygems yaml haml rdiscount builder }.each{ |r| require r }
 
 module Piccolo
 
@@ -35,13 +35,13 @@ module Piccolo
           feed.title 'paul.annesley.cc'
           feed.id 'http://paul.annesley.cc/'
           feed.link :rel => 'self', :href => 'http://paul.annesley.cc/feed'
-          feed.updated Time.parse(posts.first.date.asctime).gmtime.iso8601 unless posts.empty?
+          feed.updated posts.first.time.gmtime.iso8601 unless posts.empty?
           feed.author { feed.name 'Paul Annesley' }
           entries.to_a[0...10].each do |entry|
             feed.entry do
               feed.id entry.meta['uid'] || entry.url
-              feed.published Time.parse(entry.date.asctime).gmtime.iso8601
-              feed.updated Time.parse(entry.date.asctime).gmtime.iso8601
+              feed.published entry.time.gmtime.iso8601
+              feed.updated entry.time.gmtime.iso8601
               feed.title entry.title
               feed.link 'rel' => 'alternate', 'href' => entry.url
               feed.content entry.content, "type" => "html"
@@ -106,7 +106,7 @@ module Piccolo
   end
 
   class Entry
-    attr_reader :meta, :content, :title, :date, :url
+    attr_reader :meta, :content, :title, :time, :url
     def initialize(path)
       begin
         yaml, markdown = File.read(path).split(/\n\n/, 2)
@@ -116,13 +116,13 @@ module Piccolo
       @path = path
       @meta = YAML::load yaml
       @content = RDiscount.new(markdown).to_html
-      @title, @date = @meta['title'], Date.parse(@meta['date'])
+      @title, @time = @meta['title'], Time.parse(@meta['time'].to_s)
     end
     def date_formatted
-      @date.strftime('%d %B %Y').sub(/^0/, '')
+      @time.strftime('%d %B %Y').sub(/^0/, '')
     end
     def <=>(other)
-       other.date <=> date
+      other.time <=> time
     end
   end
 

@@ -1,6 +1,6 @@
 ---
 title: VMware Fusion (Mac) 1.0 Final
-date: 2007/08/07 05:07:00 +1000
+time: 2007/08/07 05:07:00 +1000
 modified: 2007/08/07 15:07:00 +1000
 uid: http://paul.annesley.cc/articles/2007/08/07/vmware-fusion-mac-10-final
 

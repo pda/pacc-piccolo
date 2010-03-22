@@ -1,6 +1,6 @@
 ---
 title: Great Webate - Ajax Not The Future Of The Web
-date: 2007/08/03 14:40:19 +1000
+time: 2007/08/03 14:40:19 +1000
 modified: 2007/08/04 00:40:19 +1000
 uid: http://paul.annesley.cc/articles/2007/08/04/great-webate-ajax-not-the-future-of-the-web
 

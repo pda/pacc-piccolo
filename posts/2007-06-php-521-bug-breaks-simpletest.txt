@@ -1,6 +1,6 @@
 ---
 title: PHP 5.2.1 bug breaks SimpleTest
-date: 2007/06/01 12:28:10 +1000
+time: 2007/06/01 12:28:10 +1000
 modified: 2007/06/01 22:28:10 +1000
 uid: http://paul.annesley.cc/articles/2007/06/01/php-521-bug-breaks-simpletest
 

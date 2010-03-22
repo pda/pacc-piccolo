@@ -1,6 +1,6 @@
 ---
 title: Ubuntu 7.04 Feisty Fawn on Parallels - CD-ROM Detect Error
-date: 2007/04/21 06:45:56 +1000
+time: 2007/04/21 06:45:56 +1000
 modified: 2007/04/21 16:45:56 +1000
 uid: http://paul.annesley.cc/articles/2007/04/21/ubuntu-704-feisty-fawn-on-parallels-cd-rom-detect-error
 

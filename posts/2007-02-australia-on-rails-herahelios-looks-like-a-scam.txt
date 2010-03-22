@@ -1,6 +1,6 @@
 ---
 title: Australia on Rails / HeraHelios looks like a scam
-date: 2007/02/01 02:47:41 +1100
+time: 2007/02/01 02:47:41 +1100
 modified: 2007/02/01 13:47:41 +1100
 uid: http://paul.annesley.cc/articles/2007/02/01/australia-on-rails-herahelios-looks-like-a-scam
 

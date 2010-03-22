@@ -1,6 +1,6 @@
 ---
 title: "Project Idea: XML-RPC desktop client/debugger"
-date: 2006/08/04 01:33:42 +1000
+time: 2006/08/04 01:33:42 +1000
 modified: 2006/08/04 11:33:42 +1000
 uid: http://paul.annesley.cc/articles/2006/08/04/project-idea-xml-rpc-desktop-clientdebugger
 

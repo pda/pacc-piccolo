@@ -1,6 +1,6 @@
 ---
 title: A quote from Guido van Rossum
-date: 2009/02/23 22:11:04 +1100
+time: 2009/02/23 22:11:04 +1100
 modified: 2009/02/24 09:11:04 +1100
 uid: http://paul.annesley.cc/articles/2009/02/23/guido-van-rossum-owned
 

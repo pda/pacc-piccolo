@@ -1,6 +1,6 @@
 ---
 title: Xdebug 2.0.0 Released
-date: 2007/07/25 14:55:19 +1000
+time: 2007/07/25 14:55:19 +1000
 modified: 2007/07/26 00:55:19 +1000
 uid: http://paul.annesley.cc/articles/2007/07/26/xdebug-200-released
 

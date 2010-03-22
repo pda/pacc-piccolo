@@ -11,7 +11,7 @@ JSON.parse(File.read('posts.couchdb'))['rows'].map{|r| r['value']}.each do |row|
     else
       f.puts "title: #{row['title']}"
     end
-    f.puts "date: #{row['timecreated']}"
+    f.puts "time: #{row['timecreated']}"
     f.puts "modified: #{row['timemodified']}" if row['timemodified'] != row['timecreated']
     f.puts 'uid: ' + row['uid']
     f.puts

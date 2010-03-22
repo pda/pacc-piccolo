@@ -1,6 +1,6 @@
 ---
 title: Ubuntu 7.04 Feisty Server & Parallels - CDROM/Kernel Workaround
-date: 2007/05/01 11:39:05 +1000
+time: 2007/05/01 11:39:05 +1000
 modified: 2007/05/01 21:39:05 +1000
 uid: http://paul.annesley.cc/articles/2007/05/01/ubuntu-704-feisty-server-parallels-cdromkernel-workaround
 

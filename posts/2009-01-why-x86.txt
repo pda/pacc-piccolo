@@ -1,6 +1,6 @@
 ---
 title: A quote from _why
-date: 2009/01/23 15:00:37 +1100
+time: 2009/01/23 15:00:37 +1100
 modified: 2009/01/24 02:00:37 +1100
 uid: http://paul.annesley.cc/articles/2009/01/23/why-x86
 

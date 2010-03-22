@@ -1,6 +1,6 @@
 ---
 title: CLI History Meme
-date: 2008/12/15 13:35:27 +1100
+time: 2008/12/15 13:35:27 +1100
 modified: 2008/12/16 00:35:27 +1100
 uid: http://paul.annesley.cc/articles/2008/12/15/cli-history-meme
 

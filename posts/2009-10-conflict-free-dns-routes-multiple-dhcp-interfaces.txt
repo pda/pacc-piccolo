@@ -1,6 +1,6 @@
 ---
 title: Conflict free DNS and routes with multiple DHCP interfaces
-date: 2009/10/27 11:57:00 +1100
+time: 2009/10/27 11:57:00 +1100
 uid: http://paul.annesley.cc/articles/2009/10/27/conflict-free-dns-routes-multiple-dhcp-interfaces
 
 <h2>The Problem</h2>

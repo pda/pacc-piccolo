@@ -1,6 +1,6 @@
 ---
 title: Faster PHP Apps - Profile Your Code with Xdebug
-date: 2007/04/23 14:08:52 +1000
+time: 2007/04/23 14:08:52 +1000
 modified: 2007/04/24 00:08:52 +1000
 uid: http://paul.annesley.cc/articles/2007/04/24/faster-php-apps-profile-your-code-with-xdebug
 

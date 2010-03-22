@@ -1,6 +1,6 @@
 ---
 title: Static content twice the speed with lighttpd
-date: 2006/12/22 10:13:36 +1100
+time: 2006/12/22 10:13:36 +1100
 modified: 2006/12/22 21:13:36 +1100
 uid: http://paul.annesley.cc/articles/2006/12/22/static-content-twice-the-speed-with-lighttpd
 
