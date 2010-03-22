@@ -5,40 +5,41 @@ module Piccolo
   class Server
     def call(env)
       request = Rack::Request.new env
+      response = Rack::Response.new
 
       begin
-        raise HttpError.new(405, 'Method not allowed') unless request.get? or request.head?
-        status, content = 200, dispatch(request)
+        dispatch(request, response)
       rescue HttpError
-        status, content = $!.code, HamlView.new(:error, :error => $!).to_html
+        response.status = $!.code
+        response.body = HamlView.new(:error, :error => $!).to_html
       end
 
-      headers = {
-        'Content-Length' => content.length.to_s,
-        'Content-Type' => 'text/html'
-      }
-
-      [status, headers, request.head? ? '' : content]
+      response.finish
     end
 
     private
 
-    def dispatch(request)
+    def dispatch(request, response)
+
+      unless request.get? or request.head?
+        raise HttpError.new(405, 'Method not allowed')
+      end
+
       # index
       if request.path == '/'
         posts, links = PostCollection.new, LinkCollection.new
         entries = (posts.to_a + links.to_a).sort
-        HamlView.new(:home, :entries => entries).to_html
+        response.body = HamlView.new(:home, :entries => entries).to_html
 
       # page
       elsif /^\/([\w-]+)$/.match(request.path)
-        HamlView.new(:page, :page => Page.new($1)).to_html
+        response.body = HamlView.new(:page, :page => Page.new($1)).to_html
 
       # post
       elsif /^\/(\d{4})\/(\d{2})\/([\w-]+)/.match(request.path)
         post = PostCollection.new.post($1, $2, $3)
         data = post.meta.merge(:post => post, :content => post.content)
-        HamlView.new(:post, data).to_html
+        response.body = HamlView.new(:post, data).to_html
 
       else
         raise HttpError.new(404, 'Path Not Found')
