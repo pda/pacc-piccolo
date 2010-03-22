@@ -31,18 +31,17 @@ module Piccolo
         # thanks to http://github.com/cloudhead/toto
         feed = Builder::XmlMarkup.new :indent => 2
         feed.instruct!
-        feed.feed "xmlns" => "http://www.w3.org/2005/Atom" do
+        response.body = feed.feed "xmlns" => "http://www.w3.org/2005/Atom" do
           feed.title 'paul.annesley.cc'
           feed.id 'http://paul.annesley.cc/'
           feed.link :rel => 'self', :href => 'http://paul.annesley.cc/feed'
-          feed.link :rel => 'alternate', :href => 'http://paul.annesley.cc/'
           feed.updated Time.parse(posts.first.date.asctime).gmtime.iso8601 unless posts.empty?
           feed.author { feed.name 'Paul Annesley' }
-
-          posts.each do |post|
+          posts.to_a[0...10].each do |post|
             feed.entry do
               feed.id post.meta['uid']
               feed.published Time.parse(post.date.asctime).gmtime.iso8601
+              feed.updated Time.parse(post.date.asctime).gmtime.iso8601
               feed.title post.title
               feed.link 'rel' => 'alternate', 'href' => 'http://paul.annesley.cc' + post.url
               feed.content post.content, "type" => "html"
@@ -50,7 +49,6 @@ module Piccolo
           end
         end
         response['Content-Type'] = 'application/atom+xml'
-        response.body = feed.to_xml
 
       # page
       elsif /^\/([\w-]+)$/.match(request.path)
