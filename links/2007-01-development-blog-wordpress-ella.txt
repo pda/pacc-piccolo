@@ -1,8 +1,5 @@
 --- 
-title: !binary |
-  RGV2ZWxvcG1lbnQgQmxvZyDDosKAwrogV29yZFByZXNzIDIuMSDDosKAwpxF
-  bGxhw6LCgMKd
-
+title: Development Blog › WordPress 2.1 “Ella”
 time: 2007-01-23 12:13:02 +11:00
 url: http://wordpress.org/development/2007/01/ella-21/
 tags: wordpress blogging opensource software ella

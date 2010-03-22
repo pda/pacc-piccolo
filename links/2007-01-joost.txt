@@ -1,7 +1,5 @@
---- 
-title: !binary |
-  Sm9vc3TDosKEwqI=
-
+---
+title: Joost™
 time: 2007-01-16 15:45:52 +11:00
 url: http://www.joost.com/
 tags: joost video tv
