@@ -24,7 +24,7 @@ module Piccolo
         response.body = HamlView.new(:home, :entries => entries).to_html
 
       # feed
-      elsif %w{ /articles/feed /feed /feed/atom /feed/ }.member? request.path
+      elsif request.path == '/feed'
         posts, links = PostCollection.new, LinkCollection.new
         entries = (posts.to_a + links.to_a).sort
 
