@@ -3,24 +3,16 @@
 module Piccolo
 
   class Server
+
     def call(env)
-      request = Rack::Request.new env
-      response = Rack::Response.new
-
       begin
-        dispatch(request, response)
+        dispatch(Rack::Request.new(env), Rack::Response.new).finish
       rescue HttpError
-        response.status = $!.code
-        response.body = HamlView.new(:error, :error => $!).to_html
+        Rack::Response.new(HamlView.new(:error, :error => $!).to_html, $!.code).finish
       end
-
-      response.finish
     end
 
-    private
-
     def dispatch(request, response)
-
       unless request.get? or request.head?
         raise HttpError.new(405, 'Method not allowed')
       end
@@ -73,6 +65,8 @@ module Piccolo
       else
         raise HttpError.new(404, 'Path Not Found')
       end
+
+      response
     end
   end
 
