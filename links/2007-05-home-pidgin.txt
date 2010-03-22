@@ -1,0 +1,7 @@
+--- 
+title: Home | Pidgin
+time: 2007-05-10 08:30:52 +10:00
+url: http://pidgin.im/
+tags: pidgin gaim opensource
+
+The home of Pidgin, previously Gaim, the GTK based multiprotocol instant message client.

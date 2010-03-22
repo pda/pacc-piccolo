@@ -1,0 +1,6 @@
+--- 
+title: mootools
+time: 2006-09-12 11:12:25 +10:00
+url: http://mootools.net/
+tags: ajax dom javascript webdesign opensource programming library framework
+

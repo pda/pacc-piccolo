@@ -1,0 +1,7 @@
+--- 
+title: PowerTOP
+time: 2007-08-22 11:47:31 +10:00
+url: http://www.linuxpowertop.org/powertop.php
+tags: linux intel kernel power powertop
+
+A linux tool from Intel for finding the causes of unnecessarily power-consuming CPU activity.

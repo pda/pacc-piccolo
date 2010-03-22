@@ -1,0 +1,7 @@
+--- 
+title: Many Eyes
+time: 2007-01-24 09:58:40 +11:00
+url: http://services.alphaworks.ibm.com/manyeyes/home
+tags: visualization data ibm statistics graphics social
+
+A site for sharing and commenting on visualizations

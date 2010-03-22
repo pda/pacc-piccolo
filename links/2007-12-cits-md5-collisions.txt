@@ -1,0 +1,7 @@
+--- 
+title: CITS - MD5 Collisions
+time: 2007-12-12 23:38:10 +11:00
+url: http://www.cits.rub.de/MD5Collisions/
+tags: security md5 hash
+
+Examples of engineered MD5 hash collisions in postscript files and executable binaries.

@@ -1,0 +1,7 @@
+--- 
+title: MySQL Proxy - MySQLForge Wiki
+time: 2007-07-18 15:56:39 +10:00
+url: http://forge.mysql.com/wiki/MySQL_Proxy
+tags: mysql proxy database lua mysqlproxy opensource
+
+A simple program that sits between your client and MySQL server(s) that can monitor, analyze or transform their communication.

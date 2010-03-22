@@ -1,0 +1,7 @@
+--- 
+title: "DreamHost \xC3\x82\xC2\xBB PHP4 no longer available for new domains"
+time: 2008-08-23 11:23:46 +10:00
+url: http://www.dreamhoststatus.com/2008/08/22/php4-will-no-longer-be-available-for-new-domains-starting-082608/
+tags: php dreamhost
+
+Commendable step by DreamHost - PHP4 unavailable for new domains, following the PHP4 end-of-life on 08/08/08.

@@ -1,0 +1,7 @@
+--- 
+title: django-openid - Google Code
+time: 2007-04-24 13:36:24 +10:00
+url: http://code.google.com/p/django-openid/
+tags: openid django authentication python googlecode
+
+Tools for allowing your Django application to act as an OpenID consumer. By Simon Willison.

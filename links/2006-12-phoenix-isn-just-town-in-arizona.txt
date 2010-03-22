@@ -1,0 +1,6 @@
+--- 
+title: "Phoenix isn\xC3\xA2\xC2\x80\xC2\x99t just a town in Arizona \xC3\x82\xC2\xBB rubinius"
+time: 2006-12-14 22:22:57 +11:00
+url: http://blog.fallingsnow.net/rubinius/
+tags: ruby interpreter programming rubinius
+

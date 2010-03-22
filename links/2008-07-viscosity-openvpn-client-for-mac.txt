@@ -1,0 +1,7 @@
+--- 
+title: Viscosity - OpenVPN Client for Mac
+time: 2008-07-30 22:26:57 +10:00
+url: http://www.viscosityvpn.com/
+tags: openvpn vpn viscosity macos software
+
+Nice looking OpenVPN client for Mac OS Leopard with Cocoa GUI, currently in free beta, unfortunately closed source.

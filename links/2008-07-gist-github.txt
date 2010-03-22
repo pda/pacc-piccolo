@@ -1,0 +1,9 @@
+--- 
+title: !binary |
+  R2lzdCDDosKAwpQgR2l0SHVi
+
+time: 2008-07-22 09:06:01 +10:00
+url: http://gist.github.com/
+tags: git gist paste github scm vcs pastebin
+
+Git-backed paste bin from GitHub.  Versioned forkable pastes, anyone?

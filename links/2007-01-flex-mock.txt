@@ -1,0 +1,7 @@
+--- 
+title: Flex Mock
+time: 2007-01-24 11:01:50 +11:00
+url: http://onestepback.org/software/flexmock/
+tags: ruby testing mock programming flexmock
+
+FlexMock is a simple, but flexible, mock object library for Ruby unit testing.

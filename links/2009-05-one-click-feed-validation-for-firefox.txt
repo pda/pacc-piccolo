@@ -1,0 +1,7 @@
+--- 
+title: One Click Feed Validation for Firefox
+time: 2009-05-07 09:27:44 +10:00
+url: http://feedvalidator.org/register.html
+tags: feedvalidator firefox feed atom rss
+
+Register FeedValidator.org as a "Feed Reader" in Firefox, and get one-click feed validation by "subscribing" to the feed using FeedValidator.

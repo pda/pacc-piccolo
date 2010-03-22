@@ -1,0 +1,7 @@
+--- 
+title: monit
+time: 2007-07-19 11:48:52 +10:00
+url: http://www.tildeslash.com/monit/
+tags: monit monitoring linux sysadmin opensource
+
+monit is a utility for managing and monitoring, processes, files, directories and devices on a UNIX system.

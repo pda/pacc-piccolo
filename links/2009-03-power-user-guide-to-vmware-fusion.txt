@@ -1,0 +1,7 @@
+--- 
+title: A Power User's Guide to VMware Fusion
+time: 2009-03-26 09:24:46 +11:00
+url: http://communities.vmware.com/docs/DOC-1201
+tags: virtualization vmware vmwarefusion
+
+Links and tips on running headless with suspend/shutdown controlled by HUP/TERM signals, custom network settings and other hidden settings.

@@ -1,0 +1,7 @@
+--- 
+title: GPRS, Bluetooth and Mac OS X - gnegg
+time: 2007-05-26 21:21:03 +10:00
+url: http://www.gnegg.ch/archives/278-GPRS,-Bluetooth-and-Mac-OS-X.html
+tags: bluetooth macosx k750i
+
+Internet access on Mac OS via Sony Ericsson k750i and bluetooth.

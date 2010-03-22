@@ -1,0 +1,7 @@
+--- 
+title: "Lua: demo"
+time: 2008-02-22 20:57:57 +11:00
+url: http://www.lua.org/cgi-bin/demo
+tags: lua programming language
+
+Try Lua directly in your browser. Alas not as slick as tryruby.hobix.com - but cool all the same.

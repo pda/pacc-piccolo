@@ -1,0 +1,6 @@
+--- 
+title: "Make sure machines dig your designs: XHTMLized"
+time: 2006-08-01 10:20:07 +10:00
+url: http://xhtmlized.com/
+tags: css service html for:jbanger
+

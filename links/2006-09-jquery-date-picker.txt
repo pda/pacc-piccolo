@@ -1,0 +1,6 @@
+--- 
+title: jQuery Date Picker
+time: 2006-09-05 17:26:35 +10:00
+url: http://kelvinluck.com/assets/jquery/datePicker/
+tags: jquery plugin calendar date
+

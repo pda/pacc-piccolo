@@ -1,0 +1,7 @@
+--- 
+title: Toggler
+time: 2007-06-05 08:41:06 +10:00
+url: http://snook.ca/technical/toggler/
+tags: javascript html checkbox
+
+JavaScript to check/uncheck multiple checkboxes with a single mouse drag, by Jonathan Snook.

@@ -1,0 +1,8 @@
+--- 
+title: OpenMoko
+time: 2007-01-25 15:14:21 +11:00
+url: http://www.openmoko.com/
+tags: openmoko mobile linux opensource phone hardware
+
+OpenMoko Announces the Worldâs First Integrated Open Source Mobile Communications Platform
+at Open Source in Mobile Conference in Amsterdam.

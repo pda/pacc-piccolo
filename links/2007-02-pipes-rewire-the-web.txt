@@ -1,0 +1,7 @@
+--- 
+title: "Pipes: Rewire the web"
+time: 2007-02-08 17:37:33 +11:00
+url: http://pipes.yahoo.com/
+tags: yahoo pipes mashup
+
+Pipes is an interactive feed aggregator and manipulator. Using Pipes, you can create feeds that are more powerful, useful and relevant.

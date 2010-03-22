@@ -1,0 +1,6 @@
+--- 
+title: Job-a-matic | Home
+time: 2007-01-25 12:39:37 +11:00
+url: http://www.jobamatic.com/a/jbb/home
+tags: jobamatic tools hiring recruiting
+

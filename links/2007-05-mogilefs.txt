@@ -1,0 +1,7 @@
+--- 
+title: MogileFS
+time: 2007-05-07 22:25:20 +10:00
+url: http://danga.com/mogilefs/
+tags: mogilefs filesystem danga opensource
+
+open source distributed filesystem from the makers of memcached and perlbal

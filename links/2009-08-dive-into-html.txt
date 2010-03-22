@@ -1,0 +1,7 @@
+--- 
+title: Dive Into HTML 5
+time: 2009-08-26 10:25:35 +10:00
+url: http://diveintohtml5.org/
+tags: html5 markpilgrim canvas book diveinto diveintohtml5 html javascript
+
+Mark Pilgrims work-in-progress book on HTML5, free online under a CC licence, set to be published by O'Reilly upon completion.

@@ -1,0 +1,6 @@
+--- 
+title: "AirPort: Software compatibility table"
+time: 2006-09-04 17:18:26 +10:00
+url: http://docs.info.apple.com/article.html?artnum=75422
+tags: apple airport software
+

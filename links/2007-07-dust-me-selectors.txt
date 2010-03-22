@@ -1,0 +1,7 @@
+--- 
+title: Dust-Me Selectors
+time: 2007-07-31 10:30:45 +10:00
+url: http://www.sitepoint.com/dustmeselectors/
+tags: dustme css firefox extension brothercake sitepoint
+
+Firefox extension for finding redundant CSS selectors across a website, by brothercake.

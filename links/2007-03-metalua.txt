@@ -1,0 +1,7 @@
+--- 
+title: Metalua
+time: 2007-03-02 12:03:25 +11:00
+url: http://metalua.luaforge.net/
+tags: lua
+
+"Metalua is a metaprogramming extension to Lua 5.1, i.e. a compiler which allows to extend the language's syntax and semantics from within programs."

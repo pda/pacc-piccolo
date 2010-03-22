@@ -1,0 +1,7 @@
+--- 
+title: Logging with syslog-ng
+time: 2008-07-18 08:51:25 +10:00
+url: http://sial.org/howto/logging/syslog-ng/
+tags: syslog syslogd syslog-ng macosx
+
+Includes a section of replacing the default (crashy) syslog on Mac OS with syslog-ng

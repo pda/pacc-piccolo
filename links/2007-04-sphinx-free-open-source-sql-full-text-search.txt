@@ -1,0 +1,7 @@
+--- 
+title: Sphinx - Free open-source SQL full-text search engine
+time: 2007-04-29 19:20:08 +10:00
+url: http://www.sphinxsearch.com/
+tags: fulltext search database sphinx opensource
+
+SQL full-text search engine, backends onto mysql

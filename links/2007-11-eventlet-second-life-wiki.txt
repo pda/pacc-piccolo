@@ -1,0 +1,7 @@
+--- 
+title: Eventlet - Second Life Wiki
+time: 2007-11-27 09:57:03 +11:00
+url: http://wiki.secondlife.com/wiki/Eventlet
+tags: eventlet python linden secondlife programming
+
+Nonblocking, coroutines-based networking library written in Python, maintained by Linden Labs

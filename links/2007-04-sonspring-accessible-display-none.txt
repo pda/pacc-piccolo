@@ -1,0 +1,7 @@
+--- 
+title: "SonSpring | Accessible Display: None"
+time: 2007-04-04 10:25:45 +10:00
+url: http://sonspring.com/journal/accessible-display-none
+tags: css accessibility forms html
+
+Same effect as "display: none;" but still readable by assistive technology.

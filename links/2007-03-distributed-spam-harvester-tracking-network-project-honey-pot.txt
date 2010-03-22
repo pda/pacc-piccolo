@@ -1,0 +1,7 @@
+--- 
+title: Distributed Spam Harvester Tracking Network | Project Honey Pot
+time: 2007-03-06 19:33:15 +11:00
+url: http://www.projecthoneypot.org/index.php
+tags: spam projecthoneypot email
+
+Gathering data about email harvesters by linking unique generated "honeypot" email addresses to the IP addresses they were served to

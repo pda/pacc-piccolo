@@ -1,0 +1,6 @@
+--- 
+title: Firefox/Thunderbird Extension Wizard
+time: 2006-08-10 01:33:05 +10:00
+url: http://ted.mielczarek.org/code/mozilla/extensionwiz/
+tags: firefox xul programming
+

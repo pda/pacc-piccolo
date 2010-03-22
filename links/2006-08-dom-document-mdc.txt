@@ -1,0 +1,6 @@
+--- 
+title: DOM:document - MDC
+time: 2006-08-04 18:09:02 +10:00
+url: http://developer.mozilla.org/en/docs/DOM:document
+tags: firefox reference mozilla dom
+

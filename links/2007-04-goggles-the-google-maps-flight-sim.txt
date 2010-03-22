@@ -1,0 +1,7 @@
+--- 
+title: "Goggles :: The Google Maps flight sim"
+time: 2007-04-12 14:39:41 +10:00
+url: http://www.isoma.net/games/goggles.html
+tags: google game maps flash
+
+Awesome.. Now we just need multiplayer :)

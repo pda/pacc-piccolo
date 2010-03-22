@@ -1,0 +1,6 @@
+--- 
+title: "Gluttonous : Tormenting Your Tests with Heckle"
+time: 2006-12-22 09:34:55 +11:00
+url: http://glu.ttono.us/articles/2006/12/19/tormenting-your-tests-with-heckle
+tags: ruby testing heckle programming
+

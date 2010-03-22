@@ -1,0 +1,7 @@
+--- 
+title: Flexihash - paul.annesley.cc
+time: 2008-04-30 23:58:14 +10:00
+url: http://paul.annesley.cc/articles/2008/04/30/flexihash-consistent-hashing-php
+tags: flexihash php hashing consistenthashing programming opensource paulannesley library
+
+Flexihash is a small open source consistent hashing library for PHP.

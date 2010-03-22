@@ -1,0 +1,7 @@
+--- 
+title: "Apache CouchDB: The CouchDB Project"
+time: 2009-03-04 20:43:04 +11:00
+url: http://couchdb.apache.org/
+tags: opensource http javascript erlang json rest distributed scalability database mapreduce couchdb
+
+Schema-free distributed database - built with Erlang, JavaScript map/reduce views, speaks RESTful JSON over HTTP.

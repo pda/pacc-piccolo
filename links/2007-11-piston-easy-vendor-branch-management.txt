@@ -1,0 +1,7 @@
+--- 
+title: Piston ~ Easy Vendor Branch Management
+time: 2007-11-14 22:12:27 +11:00
+url: http://piston.rubyforge.org/
+tags: piston subversion svn development ruby
+
+Interesting example of a third party codebase management utility using svn properties to persist state.

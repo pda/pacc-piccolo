@@ -1,0 +1,7 @@
+--- 
+title: SQLFormat - Online SQL Formatting Service
+time: 2009-05-06 10:42:20 +10:00
+url: http://sqlformat.appspot.com/
+tags: sql appengine sqlparse python opensource database
+
+Online SQL formatting (indentation etc) service, backed by open source python-sqlparse, with HTML interface and API, running on App Engine.

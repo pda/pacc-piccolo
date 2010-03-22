@@ -1,0 +1,7 @@
+--- 
+title: "Setting up a fault-tolerant site using Amazon\xC3\xA2\xC2\x80\xC2\x99s Availability Zones \xC3\x82\xC2\xAB RightScale Blog"
+time: 2008-03-28 10:54:33 +11:00
+url: http://blog.rightscale.com/2008/03/26/setting-up-a-fault-tolerant-site-using-amazons-availability-zones/
+tags: amazon ec2 rightscale elasticip availabilityzone availability infrastructure
+
+Using EC2s new Availability Zones and Elastic IP Addresses to increase fault tolerance.

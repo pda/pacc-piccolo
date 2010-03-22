@@ -1,0 +1,6 @@
+--- 
+title: "Ajaxian \xC3\x82\xC2\xBB JSON vs. XML: The Debate"
+time: 2007-01-10 15:32:39 +11:00
+url: http://ajaxian.com/archives/json-vs-xml-the-debate
+tags: ajaxian json xml comparison
+

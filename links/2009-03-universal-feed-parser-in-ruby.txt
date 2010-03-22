@@ -1,0 +1,7 @@
+--- 
+title: Universal Feed Parser in Ruby
+time: 2009-03-16 22:55:32 +11:00
+url: http://rfeedparser.rubyforge.org/
+tags: opensource ruby atom feed feedparser rss rfeedparser
+
+rFeedParser is a translation of Mark Pilgrim's Universal Feed Parser from Python into Ruby.

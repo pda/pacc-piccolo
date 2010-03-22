@@ -1,0 +1,6 @@
+--- 
+title: Python Tutorial
+time: 2006-12-19 23:06:22 +11:00
+url: http://docs.python.org/tut/tut.html
+tags: python tutorial programming
+

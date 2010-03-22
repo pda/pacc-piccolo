@@ -1,0 +1,6 @@
+--- 
+title: Open Source Developers' Conference 2006 Melbourne
+time: 2006-07-14 09:14:33 +10:00
+url: http://osdc.com.au/
+tags: opensource event melbourne
+

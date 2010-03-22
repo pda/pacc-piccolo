@@ -1,0 +1,7 @@
+--- 
+title: "Yahoo! UI Library: YUI Test"
+time: 2007-08-15 16:40:37 +10:00
+url: http://developer.yahoo.com/yui/yuitest/
+tags: yui javascript testing yuitest
+
+Browser-based JavaScript unit testing framework

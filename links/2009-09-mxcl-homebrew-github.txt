@@ -1,0 +1,7 @@
+--- 
+title: mxcl's homebrew - GitHub
+time: 2009-09-22 09:33:03 +10:00
+url: http://github.com/mxcl/homebrew
+tags: homebrew brew package opensource github macosx
+
+Simple package management system for Mac OS X 10.5+ written in Ruby.

@@ -1,0 +1,7 @@
+--- 
+title: Tips for Writing Nicer Site Badges - Ed Eliot
+time: 2007-02-15 11:38:14 +11:00
+url: http://www.ejeliot.com/blog/80
+tags: javascript badges xss
+
+re. XSS JS badges/widgets

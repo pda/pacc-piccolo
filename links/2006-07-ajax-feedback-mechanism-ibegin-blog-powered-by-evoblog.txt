@@ -1,0 +1,6 @@
+--- 
+title: AJAX Feedback Mechanism / iBegin Blog (powered by evoBlog)
+time: 2006-07-05 15:56:23 +10:00
+url: http://www.ibegin.com/blog/p_ajax_feedback_mechanism.html
+tags: javascript
+

@@ -1,0 +1,7 @@
+--- 
+title: jpcache
+time: 2007-02-26 10:58:49 +11:00
+url: http://www.jpcache.com/
+tags: php cache performance server
+
+jpcache is a lightweight, full page caching system for PHP, thus reducing server-load, as pages are generated less often.

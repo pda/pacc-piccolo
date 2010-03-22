@@ -1,0 +1,6 @@
+--- 
+title: Dive Into Python
+time: 2007-01-16 15:39:21 +11:00
+url: http://diveintopython.org/
+tags: python programming book ebook markpilgrim
+

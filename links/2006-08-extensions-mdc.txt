@@ -1,0 +1,6 @@
+--- 
+title: Extensions - MDC
+time: 2006-08-09 15:49:30 +10:00
+url: http://developer.mozilla.org/en/docs/Extensions
+tags: xul firefox programming
+

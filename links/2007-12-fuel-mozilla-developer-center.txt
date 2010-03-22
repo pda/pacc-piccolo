@@ -1,0 +1,7 @@
+--- 
+title: FUEL - Mozilla Developer Center
+time: 2007-12-19 18:37:44 +11:00
+url: http://developer.mozilla.org/en/docs/FUEL
+tags: fuel javascript mozilla opensource firefox
+
+JavaScript Library designed to help developers build extensions using terminology and interfaces that are familiar to them

@@ -1,0 +1,7 @@
+--- 
+title: Git User's Manual
+time: 2008-07-16 17:00:44 +10:00
+url: http://www.kernel.org/pub/software/scm/git/docs/user-manual.html
+tags: git vcs documentation manual
+
+Official user manual for the Git distributed version control system.

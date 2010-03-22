@@ -1,0 +1,6 @@
+--- 
+title: Firebug
+time: 2006-11-20 11:12:41 +11:00
+url: http://www.getfirebug.com/
+tags: firebug javascript firefox extension development programming
+

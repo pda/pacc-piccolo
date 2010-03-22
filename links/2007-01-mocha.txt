@@ -1,0 +1,7 @@
+--- 
+title: Mocha
+time: 2007-01-24 11:03:01 +11:00
+url: http://mocha.rubyforge.org/
+tags: ruby testing mock library api rdoc tdd
+
+Mocha is a library for mocking and stubbing using a syntax like that of JMock, and SchMock. Most commonly Mocha is used in conjunction with Test::Unit, but it can be used in other contexts.

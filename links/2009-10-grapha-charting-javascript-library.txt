@@ -1,0 +1,7 @@
+--- 
+title: "gRapha\xC3\x83\xC2\xABl \xC3\xA2\xC2\x80\xC2\x94 Charting JavaScript Library"
+time: 2009-10-08 10:48:56 +11:00
+url: http://g.raphaeljs.com/
+tags: raphael graphael graph chart javascript svg vector graphics
+
+Graph and chart plugin for RaphaÃ«l, by Dmitry Baranovskiy.

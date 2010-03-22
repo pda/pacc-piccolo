@@ -1,0 +1,7 @@
+--- 
+title: "Ruby on Rails: Merb"
+time: 2009-01-05 11:17:05 +11:00
+url: http://rubyonrails.org/merb
+tags: ruby webdevelopment rails merb
+
+Merb and Rails to merge into Rails 3.

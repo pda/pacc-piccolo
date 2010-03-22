@@ -1,0 +1,7 @@
+--- 
+title: Spry - Adobe Labs
+time: 2007-01-25 12:47:02 +11:00
+url: http://labs.adobe.com/wiki/index.php/Spry
+tags: ajax framework spry adobe javascript programming library
+
+Adobe wants in on the JavaScript framework action.

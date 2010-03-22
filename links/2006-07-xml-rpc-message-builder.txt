@@ -1,0 +1,6 @@
+--- 
+title: XML-RPC Message Builder
+time: 2006-07-24 11:13:29 +10:00
+url: http://www.scottandrew.com/xml-rpc/
+tags: javascript xml-rpc
+

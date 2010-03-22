@@ -1,0 +1,7 @@
+--- 
+title: Gyre
+time: 2007-02-14 11:15:25 +11:00
+url: http://gyre.bitscribe.net/
+tags: rails ruby debugger ide gyre
+
+"the open source, web-based IDE and debugger for Rails"

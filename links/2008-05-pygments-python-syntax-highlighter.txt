@@ -1,0 +1,7 @@
+--- 
+title: "Pygments \xC3\xA2\xC2\x80\xC2\x94 Python syntax highlighter"
+time: 2008-05-12 12:02:15 +10:00
+url: http://pygments.org/
+tags: pygments python highlight syntax opensource
+
+Generic Python syntax highlighter library with support for many languages and output formats.

@@ -1,0 +1,7 @@
+--- 
+title: "lwqueue: Lightweight cross-language message queue system"
+time: 2007-07-17 09:19:09 +10:00
+url: http://www.petercooper.co.uk/archives/001236.html
+tags: queue perl python ruby messaging lwqueue
+
+Serializes to JSON, clients available for Perl, Python, Ruby.

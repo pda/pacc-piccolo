@@ -1,0 +1,7 @@
+--- 
+title: Scruby
+time: 2007-04-20 11:33:48 +10:00
+url: http://sylvainsarmejeanne.free.fr/projects-scruby
+tags: scruby ruby packet network debug
+
+Scruby is a portable, customizable packet creation and sending/sniffing tool written in Ruby. With interactive shell.

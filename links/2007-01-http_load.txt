@@ -1,0 +1,7 @@
+--- 
+title: http_load
+time: 2007-01-25 16:54:06 +11:00
+url: http://www.acme.com/software/http_load/
+tags: http_load performance testing apache tools http
+
+http_load runs multiple http fetches in parallel, to test the throughput of a web server. However unlike most such test clients, it runs in a single process, so it doesn't bog down the client machine. It can be configured to do https fetches as well.

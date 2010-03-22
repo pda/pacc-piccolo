@@ -1,0 +1,6 @@
+--- 
+title: World Sunlight Map
+time: 2006-12-17 21:50:27 +11:00
+url: http://www.die.net/earth/
+tags: maps sunlight earth science world
+

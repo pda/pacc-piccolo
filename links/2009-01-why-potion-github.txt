@@ -1,0 +1,7 @@
+--- 
+title: "why's potion \xC3\xA2\xC2\x80\xC2\x94 GitHub"
+time: 2009-01-09 11:53:07 +11:00
+url: http://github.com/why/potion/tree/master
+tags: github programming language potion why
+
+An small and fast, object and mixin oriented, JIT-compiled language created by _why based on Lua's VM

@@ -1,0 +1,7 @@
+--- 
+title: toto
+time: 2010-02-10 00:46:19 +11:00
+url: http://github.com/cloudhead/toto
+tags: toto ruby git blog rack markdown erb web programming
+
+Tiny blog engine in Ruby and Rack, uses flat git-managed content files containing YAML & ERB/Markdown, handles comments via disqus, leaves caching to HTTP.

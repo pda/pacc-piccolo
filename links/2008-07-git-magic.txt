@@ -1,0 +1,7 @@
+--- 
+title: Git Magic
+time: 2008-07-11 16:12:05 +10:00
+url: http://www-cs-students.stanford.edu/~blynn/gitmagic/
+tags: git gitmagic benlynn scm vcs book
+
+Online book on Git version control, by Ben Lynn, Google employee.

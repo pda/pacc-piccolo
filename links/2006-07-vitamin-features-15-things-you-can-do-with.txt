@@ -1,0 +1,6 @@
+--- 
+title: "Vitamin Features \xC3\x82\xC2\xBB 15 Things you can do with Yahoo! UI"
+time: 2006-07-05 15:54:12 +10:00
+url: http://www.thinkvitamin.com/features/javascript/15-things-you-can-do-with-yahoo-ui
+tags: javascript
+

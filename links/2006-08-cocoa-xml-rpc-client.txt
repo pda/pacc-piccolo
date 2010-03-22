@@ -1,0 +1,6 @@
+--- 
+title: Cocoa XML-RPC Client
+time: 2006-08-04 11:27:59 +10:00
+url: http://www.ditchnet.org/xmlrpc/
+tags: xml-rpc mac debug software
+

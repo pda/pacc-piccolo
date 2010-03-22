@@ -1,0 +1,7 @@
+--- 
+title: iPodDisk
+time: 2007-04-18 11:52:20 +10:00
+url: http://ipoddisk.ourbiti.com/
+tags: ipod fuse osx software macfuse ipoddisk apple
+
+Uses MacFUSE to expose the contents of an iPod as a filesystem in Mac OS by reading ID3 tags.

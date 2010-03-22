@@ -1,0 +1,7 @@
+--- 
+title: "SitePoint Blogs \xC3\x82\xC2\xBB Besiege Your Web Application\xC3\xA2\xC2\x80\xC2\x94Load Testing over HTTP"
+time: 2007-05-07 15:34:14 +10:00
+url: http://www.sitepoint.com/blogs/2007/05/07/besiege-your-web-application-load-testing-over-http/
+tags: siege http performance opensource
+
+Web performance benchmarking and regression testing with Siege.

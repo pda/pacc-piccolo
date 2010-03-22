@@ -1,0 +1,6 @@
+--- 
+title: "Judy\xC3\xA2\xC2\x80\xC2\x99s Book: Avoiding the DeadPool"
+time: 2007-01-10 21:06:19 +11:00
+url: http://www.techcrunch.com/2007/01/09/judys-book-avoiding-the-deadpool/
+tags: for:jbanger
+

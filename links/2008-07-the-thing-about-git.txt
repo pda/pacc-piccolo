@@ -1,0 +1,7 @@
+--- 
+title: The Thing About Git
+time: 2008-07-10 14:56:24 +10:00
+url: http://tomayko.com/writings/the-thing-about-git
+tags: git scm vcs ryantomayko
+
+Great guide on working with Git, especially separating a tangled set of working copy changes into separate commits.

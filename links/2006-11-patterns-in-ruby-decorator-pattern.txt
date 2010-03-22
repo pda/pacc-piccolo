@@ -1,0 +1,6 @@
+--- 
+title: "Patterns in Ruby: Decorator Pattern"
+time: 2006-11-22 22:27:49 +11:00
+url: http://cwilliams.textdriven.com/articles/2006/10/27/patterns-in-ruby-template-method
+tags: ruby decorator patterns programming
+

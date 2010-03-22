@@ -1,0 +1,7 @@
+--- 
+title: redis
+time: 2009-05-22 09:14:36 +10:00
+url: http://code.google.com/p/redis/
+tags: redis scalability keyvalue
+
+A fast in-memory key-value store, asynchronously persisted to disk, replicates, stores strings, lists and sets with atomic operations to push/pop elements.
