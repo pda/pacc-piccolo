@@ -70,7 +70,8 @@ header h1 {
 }
 
 body {
-	background: transparent url(header.png) repeat-x top right;
+	background: transparent url(header.png) repeat-x -15px right;
+	margin-top: 40px;
 }
 
 /* layout */
