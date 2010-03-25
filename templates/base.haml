@@ -6,47 +6,65 @@
     %meta{ :name => 'Description', :content => 'The personal website of Paul Annesley, a web developer living in Melbourne, Australia.' }
     %title= (@subtitle ? @subtitle + ' &#8212; ' : '') + 'paul.annesley.cc'
     %link{ :rel => :alternate, :type => 'application/atom+xml', :title => 'Recent Blog Posts on paul.annesley.cc', :href => 'http://feeds.feedburner.com/paulannesley' }
-    %link{ :rel => :alternate, :type => 'application/rss+xml', :title => 'Recent del.icio.us Bookmarks', :href => 'http://del.icio.us/rss/paul.annesley' }
     %link{ :rel => :stylesheet, :type => 'text/css', :href => '/static/pacc.css' }
     %link{ :rel => 'openid.server', :href => 'http://www.myopenid.com/server' }
     %link{ :rel => 'openid.delegate', :href => 'http://pda.myopenid.com/' }
 
   %body
 
-    #header
-      %h1 paul.annesley.cc
-      %ul.navigation
-        %li
-          %a{ :href => '/' } Home
-        %li
-          %a{ :href => '/about' } About
-        -#
-          %li
-            %a{ :href => '/articles' } Articles
+    #page
 
-    #column-container
-      #column1.column
-        .column-content
+      %header
+        %h1
+          %a{ :href => '/' } paul.annesley.cc
+
+      #main
+
+        #sidebar
+
           #profile
             %h2 Profile
+            %img{ :width => 76, :height => 76, :src => '/static/paul-annesley.jpg', :alt => 'Paul Annesley' }
             %p
-              %img{ :width => 73, :height => 73, :src => '/static/paul-annesley.jpg', :alt => 'Paul Annesley' }
-              This is the personal website of
-              <a rel="me" title="Home" class="name" href="/">Paul Annesley</a>,
-              senior developer at
-              <a href="http://99designs.com/">99designs</a>
-              in
-              <a title="Melbourne on Wikipedia" href="http://en.wikipedia.org/wiki/Melbourne">Melbourne, Australia</a>.
-              You can <a title="pda on Twitter" href="http://twitter.com/pda">follow Paul on Twitter</a>.
+              You've found
+              <a rel="me" title="Paul Annesley" class="name" href="/">Paul<span class="lastname"> Annesley</span></a>,
+              lead developer at
+              <a href="http://99designs.com/">99designs</a>.
+            %dl
+              %dt Paul<span class="lastname"> Annesley</span>
+              %dd rides fixed
+              %dd loves coffee
+              %dd writes code
+              %dd builds the Internet
+            %p
+              Well, some of it.
 
-      #column2.column
-        .column-content
+          #elsewhere
+            %h2 Elsewhere
+            %ul
+              %li.twitter
+                %a{ :href => 'http://twitter.com/pda' } Twitter
+                %span tweets as pda
+              %li.github
+                %a{ :href => 'http://github.com/pda' } GitHub
+                %span codes as pda
+              %li.delicious
+                %a{ :href => 'http://delicious.com/paul.annesley' } Delicious
+                %span links as paul.annesley
+              %li.linkedin
+                %a{ :href => 'http://au.linkedin.com/in/paulannesley' } LinkedIn
+                %span networks as Paul Annesley
+              %li.flickr
+                %a{ :href => 'http://flickr.com/photos/paulannesley/' } Flickr
+                %span points & shoots seldom
+
+        #content
           = base_content
 
-    #footer
-      %p &copy; 2007 &#8211; #{Time.now.year} Paul Annesley
+      %footer
+        %p &copy; 2007 &#8211; #{Time.now.year} Paul Annesley
 
-    %script{ :src => 'http://www.google-analytics.com/urchin.js', :type => 'text/javascript' }
-    :javascript
-      _uacct = "UA-1080938-1";
-      urchinTracker();
+      %script{ :src => 'http://www.google-analytics.com/urchin.js', :type => 'text/javascript' }
+      :javascript
+        _uacct = "UA-1080938-1";
+        urchinTracker();
