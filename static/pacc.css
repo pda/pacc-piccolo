@@ -103,6 +103,12 @@ article {
 	margin-bottom: 2em;
 }
 
+article h1 {
+	padding-left: 44px;
+	background: transparent url(link.png) no-repeat 0 5px;
+	font-size: 1.2em;
+}
+
 /* profile */
 
 #profile {
