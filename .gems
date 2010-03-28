@@ -2,3 +2,4 @@ rack-rewrite
 haml
 rdiscount
 builder
+exceptional
