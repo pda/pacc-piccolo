@@ -108,21 +108,28 @@ article {
 
 article h1 {
 	font-size: 1.2em;
-}
-
-article.post {
-	outline: 0.2em solid #e8ffe8;
+	display: inline-block;
 }
 
 article.link h1 {
-	padding-left: 42px;
+	padding-left: 44px;
 	background: transparent url(link.png) no-repeat 0 5px;
 }
 
 article.post h1 {
 	padding-left: 36px;
 	margin-bottom: 0.5em;
-	background: transparent url(post.png) no-repeat -1px 5px;
+	background: transparent url(post.png) no-repeat -1px 3px;
+}
+
+article > p.date {
+	font-size: 0.9em;
+	color: #999;
+	display: inline-block;
+}
+
+article > p.date:before {
+	content: "» ";
 }
 
 /* profile */
