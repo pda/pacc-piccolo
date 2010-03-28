@@ -109,6 +109,9 @@ article {
 article h1 {
 	font-size: 1.2em;
 	display: inline-block;
+	overflow: hidden;
+	white-space: nowrap;
+	max-width: 32em;
 }
 
 article.link h1 {
