@@ -124,6 +124,9 @@ module Piccolo
     def <=>(other)
       other.time <=> time
     end
+    def type
+      self.class.name.split('::').last.downcase
+    end
   end
 
   class Post < Entry
