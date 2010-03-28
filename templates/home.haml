@@ -1,7 +1,7 @@
 - entries[0...10].each do |entry|
-  %article
+  %article{ :class => entry.type }
     %h1
-      %a{:href => entry.url}= entry.title
+      %a{ :href => entry.url }= entry.title
     %p.date= entry.date_formatted
     .content
       ~ entry.content
