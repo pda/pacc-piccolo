@@ -135,7 +135,7 @@ article > p.date:before {
 	content: "» ";
 }
 
-article p {
+article p, article blockquote {
 	margin-bottom: 1em;
 }
 
@@ -158,6 +158,12 @@ article blockquote {
 	margin-left: 5px;
 	padding-left: 1em;
 	color: #555;
+}
+
+article h2 {
+	margin: 1em 0;
+	font-size: 1.2em;
+	font-weight: bold;
 }
 
 article span.strike {
