@@ -135,6 +135,14 @@ article > p.date:before {
 	content: "» ";
 }
 
+article p {
+	margin-bottom: 1em;
+}
+
+article p:last-child {
+	margin-bottom: 0;
+}
+
 /* profile */
 
 #profile {
