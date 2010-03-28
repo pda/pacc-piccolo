@@ -35,7 +35,7 @@ module Piccolo
           feed.title 'paul.annesley.cc'
           feed.id 'http://paul.annesley.cc/'
           feed.link :rel => 'self', :href => 'http://paul.annesley.cc/feed'
-          feed.updated posts.first.time.gmtime.iso8601 unless posts.empty?
+          feed.updated entries.first.time.gmtime.iso8601 unless entries.empty?
           feed.author { feed.name 'Paul Annesley' }
           entries.to_a[0...10].each do |entry|
             feed.entry do
