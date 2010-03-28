@@ -35,7 +35,7 @@ a {
 	color: #080;
 	padding: 0 0.3em;
 	margin: 0 -0.2em;
-	-webkit-box-shadow: 0 0.35em 0.2em -0.4em #2f2;
+	-webkit-box-shadow: 0 0.35em 0.2em -0.4em #2d2;
 }
 
 a:visited {
@@ -44,8 +44,8 @@ a:visited {
 
 a:hover {
 	color: white;
-	background-color: #2f2;
-	-webkit-box-shadow: 0 0 0.1em 0.0em #2f2;
+	background-color: #2d2;
+	-webkit-box-shadow: 0 0 0.1em 0.0em #2d2;
 }
 
 header h1 a, header h1 a:visited {
@@ -55,7 +55,7 @@ header h1 a, header h1 a:visited {
 }
 header h1 a:hover {
 	color: white;
-	-webkit-box-shadow: 0 0 0.1em 0.0em #2f2;
+	-webkit-box-shadow: 0 0 0.1em 0.0em #2d2;
 }
 
 /* end link treatment */
