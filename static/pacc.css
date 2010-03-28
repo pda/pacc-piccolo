@@ -99,6 +99,7 @@ footer {
 #sidebar {
 	padding-right: 2em;
 	min-width: 280px;
+	width: 30%;
 }
 
 article {
