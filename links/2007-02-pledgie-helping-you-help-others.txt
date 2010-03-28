@@ -1,5 +1,5 @@
 --- 
-title: "Pledgie \xC3\xA2\xC2\x80\xC2\x94 Helping you help others."
+title: "Pledgie \xE2\x80\x94 Helping you help others."
 time: 2007-02-18 14:00:22 +11:00
 url: http://www.pledgie.com/
 tags: pledgie donation paypal

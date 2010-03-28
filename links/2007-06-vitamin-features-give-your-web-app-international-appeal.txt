@@ -1,5 +1,5 @@
 --- 
-title: "Vitamin Features \xC3\x82\xC2\xBB Give your web app international appeal"
+title: "Vitamin Features \xC2\xBB Give your web app international appeal"
 time: 2007-06-05 09:34:28 +10:00
 url: http://www.thinkvitamin.com/features/webapps/give-your-web-app-international-appeal
 tags: gettext php internationalization vitamin

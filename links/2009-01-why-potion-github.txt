@@ -1,5 +1,5 @@
 --- 
-title: "why's potion \xC3\xA2\xC2\x80\xC2\x94 GitHub"
+title: "why's potion \xE2\x80\x94 GitHub"
 time: 2009-01-09 11:53:07 +11:00
 url: http://github.com/why/potion/tree/master
 tags: github programming language potion why

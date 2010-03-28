@@ -1,5 +1,5 @@
 --- 
-title: "On having layout \xC3\xA2\xC2\x80\xC2\x94 the concept of hasLayout in IE/Win"
+title: "On having layout \xE2\x80\x94 the concept of hasLayout in IE/Win"
 time: 2006-10-20 15:16:57 +10:00
 url: http://www.satzansatz.de/cssd/onhavinglayout.html
 tags: css ie webdesign hack

@@ -1,5 +1,5 @@
 --- 
-title: "What\xC3\xA2\xC2\x80\xC2\x99s New in Python 2.6"
+title: "What\xE2\x80\x99s New in Python 2.6"
 time: 2008-10-03 10:00:03 +10:00
 url: http://docs.python.org/whatsnew/2.6.html
 tags: python programming language

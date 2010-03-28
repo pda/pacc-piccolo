@@ -4,5 +4,4 @@ time: 2007-01-29 21:51:45 +11:00
 url: http://idproxy.net/
 tags: openid yahoo identity authentication service idproxy
 
-It uses Yahoo!âs Browser-Based Authentication API to allow you to sign in with a Yahoo! account, then lets you create one or more OpenIDs (of the form something.idproxy.net) to use with sites that support the OpenID standard.
-In effect, it lets you use
+It uses Yahoo!’s Browser-Based Authentication API to allow you to sign in with a Yahoo! account, then lets you create one or more OpenIDs (of the form something.idproxy.net) to use with sites that support the OpenID standard. In effect, it lets you use

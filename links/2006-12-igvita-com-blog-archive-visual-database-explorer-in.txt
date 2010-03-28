@@ -1,5 +1,5 @@
 --- 
-title: "igvita.com \xC3\x82\xC2\xBB Blog Archive \xC3\x82\xC2\xBB Visual Database Explorer in Ruby"
+title: "igvita.com \xC2\xBB Blog Archive \xC2\xBB Visual Database Explorer in Ruby"
 time: 2006-12-15 17:15:03 +11:00
 url: http://www.igvita.com/blog/2006/12/11/visual-database-explorer-in-ruby/
 tags: ruby programming threads

@@ -1,5 +1,5 @@
 --- 
-title: "GCOE X \xC3\x82\xC2\xBB Home"
+title: "GCOE X \xC2\xBB Home"
 time: 2007-05-30 09:02:53 +10:00
 url: http://www.gcoex.com/
 tags: javascript desktop gcoex

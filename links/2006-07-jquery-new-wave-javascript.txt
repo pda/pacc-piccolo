@@ -2,5 +2,5 @@
 title: "jQuery: New Wave Javascript"
 time: 2006-07-25 12:37:45 +10:00
 url: http://jquery.com/
-tags: javascript jquery for:jbanger
+tags: for:jbanger javascript jquery
 

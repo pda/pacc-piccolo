@@ -1,5 +1,5 @@
 --- 
-title: "New to Git? \xC3\xA2\xC2\x80\xC2\x94 GitHub"
+title: "New to Git? \xE2\x80\x94 GitHub"
 time: 2008-07-23 21:47:28 +10:00
 url: http://github.com/blog/120-new-to-git
 tags: git links github

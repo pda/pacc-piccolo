@@ -1,5 +1,5 @@
 --- 
-title: "Ma.tt \xC3\x82\xC2\xBB IE6 Independence?"
+title: "Ma.tt \xC2\xBB IE6 Independence?"
 time: 2008-07-09 10:15:33 +10:00
 url: http://ma.tt/2008/07/ie6-independence/
 tags: browsers ie ie6 wordpress

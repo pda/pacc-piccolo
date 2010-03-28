@@ -1,5 +1,5 @@
 --- 
-title: "facebook-memcached \xC3\xA2\xC2\x80\xC2\x94 GitHub"
+title: "facebook-memcached \xE2\x80\x94 GitHub"
 time: 2008-12-13 13:28:26 +11:00
 url: http://github.com/fbmarc/facebook-memcached/tree/master
 tags: opensource github memcached facebook fork udp

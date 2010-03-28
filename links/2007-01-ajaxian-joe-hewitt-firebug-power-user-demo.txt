@@ -1,5 +1,5 @@
 --- 
-title: "Ajaxian \xC3\x82\xC2\xBB Joe Hewitt Firebug power user demo"
+title: "Ajaxian \xC2\xBB Joe Hewitt Firebug power user demo"
 time: 2007-01-31 16:09:38 +11:00
 url: http://ajaxian.com/archives/joe-hewitt-firebug-power-user-demo
 tags: firebug javascript video tutorial yahoo firefox

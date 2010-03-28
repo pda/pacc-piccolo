@@ -1,5 +1,5 @@
 --- 
-title: "\xC3\xA2\xC2\x80\xC2\x9CRelease It!\xC3\xA2\xC2\x80\xC2\x9D Is Truly Excellent :: Steve Vinoski\xC3\xA2\xC2\x80\xC2\x99s Blog"
+title: "\xE2\x80\x9CRelease It!\xE2\x80\x9D Is Truly Excellent :: Steve Vinoski\xE2\x80\x99s Blog"
 time: 2007-11-14 09:18:33 +11:00
 url: http://steve.vinoski.net/blog/2007/11/13/release-it-is-truly-excellent/
 tags: book programming michaelnygard pragprog software development

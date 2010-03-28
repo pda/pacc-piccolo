@@ -1,5 +1,5 @@
 --- 
-title: "OAuth \xC3\xA2\xC2\x80\xC2\x94 An open protocol to allow secure API authentication in a simple and standard method from desktop and web applications."
+title: "OAuth \xE2\x80\x94 An open protocol to allow secure API authentication in a simple and standard method from desktop and web applications."
 time: 2007-11-20 16:01:30 +11:00
 url: http://oauth.net/
 tags: oauth api security authentication

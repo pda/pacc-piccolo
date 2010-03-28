@@ -1,5 +1,5 @@
 --- 
-title: "Spot On :: Steve Vinoski\xC3\xA2\xC2\x80\xC2\x99s Blog"
+title: "Spot On :: Steve Vinoski\xE2\x80\x99s Blog"
 time: 2008-07-28 20:27:05 +10:00
 url: http://steve.vinoski.net/blog/2008/07/28/spot-on/
 tags: rest rpc stevevinoski distributed links
