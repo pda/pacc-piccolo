@@ -27,6 +27,9 @@ module Piccolo
       elsif request.path == '/feed'
         posts, links = PostCollection.new, LinkCollection.new
         entries = (posts.to_a + links.to_a).sort
+        if ENV['FEED_EPOCH']
+          entries.delete_if { |e| e.time < Time.parse(ENV['FEED_EPOCH']) }
+        end
 
         # thanks to http://github.com/cloudhead/toto
         feed = Builder::XmlMarkup.new :indent => 2
