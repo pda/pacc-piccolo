@@ -24,10 +24,11 @@
 
           #profile
             %h2 Profile
-            %img{ :width => 76, :height => 76, :src => '/static/paul-annesley.jpg', :alt => 'Paul Annesley' }
+            %a{ :href => '/about' }
+              %img{ :width => 76, :height => 76, :src => '/static/paul-annesley.jpg', :alt => 'Paul Annesley' }
             %p
               You've found
-              <a rel="me" title="Paul Annesley" class="name" href="/">Paul<span class="lastname"> Annesley</span></a>,
+              <a rel="me" title="Paul Annesley" class="name" href="/about">Paul<span class="lastname"> Annesley</span></a>,
               lead developer at
               <a href="http://99designs.com/">99designs</a>.
             %dl
