@@ -72,8 +72,9 @@ body {
 
 footer {
 	background: transparent url(end-tamper.jpeg) no-repeat center top;
+	width: 60px;
 	height: 100px;
-	margin: 2em 0;
+	margin: 2em auto;
 }
 
 /* layout */
@@ -98,6 +99,7 @@ footer {
 
 #sidebar {
 	padding-right: 2em;
+	padding-top: 1em;
 	min-width: 280px;
 	width: 30%;
 }
