@@ -1,4 +1,4 @@
-%w{ time rubygems yaml haml rdiscount builder }.each{ |r| require r }
+%w{ time yaml rdiscount }.each{ |r| require r }
 
 module Piccolo
 
@@ -51,23 +51,20 @@ module Piccolo
     def empty?
       to_a.empty?
     end
+    def find(year, month, stub)
+      @klass.new('%s/%04d-%02d-%s.txt' % [@dir, year, month, stub])
+    end
   end
 
   class PostCollection < EntryCollection
     def initialize
       super 'posts', Post
     end
-    def post(year, month, stub)
-      Post.new('%s/%04d-%02d-%s.txt' % [@dir, year, month, stub])
-    end
   end
 
   class LinkCollection < EntryCollection
     def initialize
       super 'links', Link
-    end
-    def link(year, month, stub)
-      Link.new('%s/%04d-%02d-%s.txt' % [@dir, year, month, stub])
     end
   end
 
@@ -76,6 +73,12 @@ module Piccolo
     def initialize(code, message = nil)
       @code, @message = code, message
     end
+  end
+
+  module_function
+
+  def entries_all
+    (PostCollection.new.to_a + LinkCollection.new.to_a).sort
   end
 
 end
