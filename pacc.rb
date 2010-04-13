@@ -14,11 +14,19 @@ end
 
 # post
 get %r{^/(\d{4})/(\d{2})/([\w-]+)$} do
-  @post = Piccolo::PostCollection.new.find(*params[:captures])
+  begin
+    @post = Piccolo::PostCollection.new.find(*params[:captures])
+  rescue NameError
+    pass
+  end
   haml :post
 end
 
 # page
 get %r{^/([\w-]+)$} do
-  haml :"pages/#{params[:captures].first}"
+  begin
+    haml :"pages/#{params[:captures].first}"
+  rescue Errno::ENOENT
+    pass
+  end
 end

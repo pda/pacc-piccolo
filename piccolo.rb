@@ -8,7 +8,7 @@ module Piccolo
       begin
         yaml, markdown = File.read(path).split(/\n\n/, 2)
       rescue Errno::ENOENT
-        raise HttpError.new(404, '%s Not Found' % self.type)
+        raise NameError, '%s not found' % self.type
       end
       @path = path
       @meta = YAML::load yaml
@@ -65,13 +65,6 @@ module Piccolo
   class LinkCollection < EntryCollection
     def initialize
       super 'links', Link
-    end
-  end
-
-  class HttpError < StandardError
-    attr_reader :code, :message
-    def initialize(code, message = nil)
-      @code, @message = code, message
     end
   end
 
