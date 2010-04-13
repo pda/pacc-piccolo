@@ -1,8 +1,7 @@
-require 'piccolo'
 require 'rack-rewrite'
-require 'exceptional'
+#require 'exceptional'
 
-use Rack::Exceptional, 'd2e3909172e0a9467c838355f87a1ca2936cb3f6'
+#use Rack::Exceptional, 'd2e3909172e0a9467c838355f87a1ca2936cb3f6'
 
 # legacy URL support
 use Rack::Rewrite do
@@ -20,4 +19,5 @@ end
 
 use Rack::Static, :urls => ['/static', '/assets', '/favicon.ico']
 
-run Piccolo::Server.new
+require 'pacc'
+run Sinatra::Application

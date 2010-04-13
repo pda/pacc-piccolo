@@ -1,3 +1,4 @@
+sinatra
 rack-rewrite
 haml
 rdiscount
