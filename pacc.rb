@@ -30,3 +30,7 @@ get %r{^/([\w-]+)$} do
     pass
   end
 end
+
+not_found do
+  haml :not_found
+end
