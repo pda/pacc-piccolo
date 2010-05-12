@@ -13,7 +13,7 @@ use Rack::Rewrite do
   r301 %r{/articles(/\d+/.*)}, '$1'
 
   r301 '/feed', 'http://feeds.feedburner.com/paulannesley',
-    :if => Proc.new { |env| !env['HTTP_USER_AGENT'].match(/feed(burner|validator)/) }
+    :if => Proc.new { |env| !(env['HTTP_USER_AGENT'] || '').match(/feed(burner|validator)/) }
 
 end
 
