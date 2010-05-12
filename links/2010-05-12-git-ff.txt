@@ -1,0 +1,12 @@
+title: "git-ff for git 1.7+"
+time: 2010-05-12 21:07:00 +11:00
+url: http://gist.github.com/398090
+tags: git bash
+
+Provides 'git ff' to quickly fast-forward your current branch to the tracked remote when possible.
+
+It's 'git pull --ff-only' for those who do their own fetching, and besides, 'git ff' is quicker :)
+
+Drop it in your path somewhere; depends on Git 1.7+ for the new --ff-only parameter.
+
+<script src="http://gist.github.com/398090.js?file=git-ff"></script>
