@@ -172,6 +172,11 @@ article span.strike {
 	text-decoration: line-through;
 }
 
+article .gist {
+	font-size: 90%;
+	margin: 0 1em;
+}
+
 /* profile */
 
 #profile {
