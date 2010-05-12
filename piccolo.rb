@@ -52,7 +52,7 @@ module Piccolo
       to_a.empty?
     end
     def find(year, month, stub)
-      @klass.new('%s/%04d-%02d-%s.txt' % [@dir, year, month, stub])
+      @klass.new('%s/%04d-%02d-%s.txt' % [@dir, year.to_i, month.to_i, stub])
     end
   end
 
