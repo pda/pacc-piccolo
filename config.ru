@@ -12,6 +12,8 @@ use Rack::Rewrite do
 
   r301 %r{/articles(/\d+/.*)}, '$1'
 
+  r301 %r{/(200\d/\d+)/\d+/(.*)}, '/$1/$2'
+
   r301 '/feed', 'http://feeds.feedburner.com/paulannesley',
     :if => Proc.new { |env| !(env['HTTP_USER_AGENT'] || '').match(/feed(burner|validator)/) }
 
