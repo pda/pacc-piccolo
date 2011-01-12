@@ -6,7 +6,7 @@ GEM
     rack (1.2.1)
     rack-rewrite (1.0.2)
     rdiscount (1.6.5)
-    sinatra (1.1.2)
+    sinatra (1.2.0.a)
       rack (~> 1.1)
       tilt (~> 1.2)
     tilt (1.2.1)
@@ -19,4 +19,4 @@ DEPENDENCIES
   haml
   rack-rewrite
   rdiscount
-  sinatra
+  sinatra (~> 1.2.0.a)

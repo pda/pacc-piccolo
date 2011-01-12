@@ -1,7 +1,7 @@
 source "http://rubygems.org"
 
 # Web framework.
-gem "sinatra"
+gem "sinatra", "~> 1.2.0.a"
 
 # Markdown syntax.
 gem "rdiscount"
