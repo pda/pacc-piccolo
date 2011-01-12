@@ -1,4 +1,4 @@
-%w{ sinatra piccolo haml builder }.each{ |r| require r }
+%w{ sinatra haml builder ./piccolo }.each{ |r| require r }
 
 get '/' do
   @entries = Piccolo::entries_all

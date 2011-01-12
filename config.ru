@@ -21,5 +21,5 @@ end
 
 use Rack::Static, :urls => ['/static', '/assets', '/favicon.ico']
 
-require 'pacc'
+require './pacc'
 run Sinatra::Application
