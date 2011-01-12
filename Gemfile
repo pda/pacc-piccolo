@@ -11,3 +11,6 @@ gem "haml"
 
 # Atom feed generation.
 gem "builder"
+
+# Support legacy URLs.
+gem "rack-rewrite"
