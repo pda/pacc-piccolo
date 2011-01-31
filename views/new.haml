@@ -1,0 +1,90 @@
+!!!
+%html
+
+  %head
+    %meta{ :charset => 'utf-8' }
+    %meta{ :name => 'Description', :content => "You've found Paul Annesley, lead developer at 99designs. Paul rides fixed, loves coffee, writes code and builds the Internet. Well, some of it." }
+    %title= (@subtitle ? @subtitle + ' &#8212; ' : '') + 'paul.annesley.cc'
+    %link{ :rel => :alternate, :type => 'application/atom+xml', :title => 'Recent Blog Posts on paul.annesley.cc', :href => 'http://feeds.feedburner.com/paulannesley' }
+    %link{ :rel => :stylesheet, :type => 'text/css', :href => '/static/pacc.css' }
+    %link{ :rel => :stylesheet, :type => 'text/css', :href => '/static/new_entry.css' }
+    %link{ :rel => 'openid.server', :href => 'http://www.myopenid.com/server' }
+    %link{ :rel => 'openid.delegate', :href => 'http://pda.myopenid.com/' }
+
+  %body
+
+    #page
+
+      %header
+        %h1
+          %a{ :href => '/' } paul.annesley.cc
+
+      #main
+
+        #content
+
+          #write
+
+            %form{ :action => "#", :method => "" }
+
+              %fieldset.meta
+
+                .title
+                  %label{ :for => :input_title } Title
+                  %input#input_title
+
+              %fieldset.type
+
+                %span.label Type
+                .types
+                  %label{ :for => :type_link }
+                    %input#type_link{ :type => :radio, :name => :type, :checked => true }
+                    Link
+                  %label{ :for => :type_post }
+                    %input#type_post{ :type => :radio, :name => :type }
+                    Post
+
+              %fieldset.meta
+
+                .url
+                  %label{ :for => :url } Url
+                  %input#input_url
+
+                .time
+                  %label{ :for => :time } Time
+                  %input#input_time
+                  %a{ :href => "#" } update
+
+                .tags
+                  %label{ :for => :tags } Tags
+                  %input#input_tags
+
+              %fieldset.body
+
+                %label{ :for => :input_body } Body
+                %textarea#input_body
+
+            %fieldset.generated
+
+              %label{ :for => :input_generated } Generated
+              %textarea#input_generated
+
+          #preview
+
+            %article
+              %h1
+                %a{ :href => "#" }
+              %p.date
+              .content
+
+      %footer{ :title => 'EOF' }
+
+      %script{ :src => 'http://www.google-analytics.com/urchin.js', :type => 'text/javascript' }
+      :javascript
+        _uacct = "UA-1080938-1";
+        urchinTracker();
+
+      %script{ :src => 'https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js', :type => 'text/javascript' }
+      %script{ :src => '/static/showdown.js', :type => 'text/javascript' }
+      %script{ :src => '/static/sprintf-0.7-beta1.js', :type => 'text/javascript' }
+      %script{ :src => '/static/new_entry.js', :type => 'text/javascript' }

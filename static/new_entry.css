@@ -1,0 +1,83 @@
+#content {
+	display: table-row;
+}
+
+#write {
+	display: table-cell;
+}
+
+#content #preview {
+	display: table-cell;
+}
+
+fieldset {
+	margin: 1.0em 0;
+}
+
+input {
+	font-size: 110%;
+	margin-bottom: 0.5em;
+	padding: 4px;
+}
+
+fieldset.type .types {
+	display: table;
+	width: 430px;
+	border-spacing: 10px; /* three gaps = 30px */
+	margin-left: -10px;
+}
+
+fieldset.type label
+{
+	display: table-cell;
+	padding: 0.4em 1.2em 0.2em 0.6em;
+	border: 1px solid #ddd;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	color: #999;
+}
+
+fieldset.type span.label {
+	display: none;
+}
+
+fieldset.meta label,
+fieldset.body label,
+fieldset.generated label {
+	display: block;
+	font-size: 90%;
+	text-transform: uppercase;
+	color: #999;
+}
+
+fieldset.meta input {
+	width: 400px;
+}
+
+fieldset.meta .time a {
+	margin-left: -64px;
+	color: #6c6;
+}
+fieldset.meta .time a:hover {
+	color: white;
+}
+
+fieldset.meta .title input {
+	font-size: 150%;
+}
+
+fieldset.body textarea,
+fieldset.generated textarea {
+	width: 410px;
+	height: 200px;
+	border: 2px inset;
+}
+
+fieldset.generated {
+	margin-top: 2em;
+}
+
+#input_generated {
+	white-space: pre;
+	font-family: Menlo;
+}

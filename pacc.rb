@@ -12,6 +12,10 @@ get '/feed' do
   builder :feed
 end
 
+get '/new' do
+  haml :new, :layout => false
+end
+
 # post
 get %r{^/(\d{4})/(\d{2})/([\w-]+)$} do
   begin
