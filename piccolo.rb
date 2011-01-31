@@ -6,7 +6,7 @@ module Piccolo
     attr_reader :meta, :content, :title, :time, :url
     def initialize(path)
       begin
-        yaml, markdown = File.read(path).split(/\n\n/, 2)
+        yaml, markdown = File.open(path, "r:UTF-8").read.split(/\n\n/, 2)
       rescue Errno::ENOENT
         raise NameError, '%s not found' % self.type
       end
