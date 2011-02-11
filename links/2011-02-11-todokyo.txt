@@ -1,0 +1,13 @@
+---
+title: "Todokyo"
+time: 2011-02-11 11:24:53 +11:00
+url: http://todokyo.com/
+tags: todokyo todo
+
+Interesting looking todo client-side web app..
+
+<blockquote>
+It works like you’d expect, with a couple restrictions: First, every morning it starts over fresh. Your list from the day before is thrown in the trash. This, hopefully, will encourage the completion of all tasks each day and discourage the addition of frivolous items. Second, there’s no reordering. I want to trust my subconscious; if I add a task before another, then it’s because my mind has determined it’s priority by remembering it sooner.
+</blockquote>
+
+via [@toolmantim](http://twitter.com/toolmantim/status/35851627713798144)
